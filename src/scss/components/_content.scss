@@ -32,15 +32,30 @@
 
 .information {
   color: rgb(161, 160, 160);
+  p {
+    margin-top: 20px;
+    display: flex;
+    width: 100vh;
+    a {
+      text-decoration: none;
+      color: rgb(161, 160, 160);
+    }
+    a:hover {
+      color: rgb(26, 104, 192);
+      transition: 0.3s;
+    }
+  }
 }
 
 .readme {
+  margin: 0 500px;
   padding: 20px;
   margin-top: 20px;
   margin-left: 260px;
-  margin-right: 100px;
+  // margin-right: 100px;
   height: 75%;
   width: 75%;
+  max-width: 900px;
   border-radius: 8px;
   border: 1px solid rgb(104, 98, 98);
   color: rgb(161, 160, 160);
@@ -54,7 +69,7 @@
       }
       p {
         display: block;
-        margin-top: 10px;
+        margin-top: 20px;
       }
 
       .skills {

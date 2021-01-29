@@ -5,8 +5,26 @@ function Content() {
         <img src="../img/mainphoto.png" alt="" />
         <div className="information">
           <h1>Łukasz Protosawicki</h1>
-          <p></p>
-          🛰️
+          <p> 🛰️ Gorzów Wielkopolski</p>
+          <p>
+            🔗
+            <a
+              className="img-link"
+              href="https://www.linkedin.com/in/%C5%82ukasz-protosawicki-22473783/"
+            >
+              www.linkedin.com/in/lukaszprotosawicki
+            </a>
+          </p>
+          <p>
+            🔗{" "}
+            <a
+              className="img-link"
+              href="
+              https://github.com/lukaszprotosawicki"
+            >
+              www.github.com/lukaszprotosawicki
+            </a>{" "}
+          </p>
         </div>
       </div>
       <div className="readme">
@@ -31,7 +49,7 @@ function Content() {
             <p>
               Participation in the course Front-end Developer in
               <a className="img-link" href="https://infoshareacademy.com">
-                pinfoShare Academy.
+                infoShare Academy.
               </a>
             </p>
             <p>
@@ -39,6 +57,16 @@ function Content() {
               <a
                 className="img-link"
                 href="https://www.linkedin.com/in/%C5%82ukasz-protosawicki-22473783/"
+              >
+                lukaszprotosawicki
+              </a>
+            </p>
+            <p>
+              Github Repository:
+              <a
+                className="img-link"
+                href="
+                https://github.com/lukaszprotosawicki"
               >
                 lukaszprotosawicki
               </a>
