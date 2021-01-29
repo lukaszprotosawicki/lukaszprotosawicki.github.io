@@ -4,13 +4,13 @@ function Navigation() {
       <div className="content-navigation">
         <ul>
           <li>
-            <a href="default.asp">About me</a>
+            <a href="#a">About me</a>
           </li>
           <li>
-            <a href="news.asp">Projects</a>
+            <a href="#a">Projects</a>
           </li>
           <li>
-            <a href="contact.asp">Contact</a>
+            <a href="#a">Contact</a>
           </li>
         </ul>
       </div>
