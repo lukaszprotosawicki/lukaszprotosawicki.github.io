@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: auto;
 }
 
 body {
@@ -11,3 +12,4 @@ body {
 }
 
 @import "./components/navigation";
+@import "./components/bar";

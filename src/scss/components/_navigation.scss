@@ -1,5 +1,5 @@
 .navigation {
-  background-color: rgb(27, 26, 32);
+  background-color: #0d1117;
   .content-navigation {
     margin-left: 500px;
     text-align: right;
@@ -11,9 +11,13 @@
         margin-right: 30px;
 
         a {
-          font-size: 16px;
+          font-size: 20px;
           text-decoration: none;
-          color: rgb(117, 117, 117);
+          color: rgb(138, 136, 136);
+        }
+        a:hover {
+          color: rgb(224, 222, 222);
+          transition: 0.6s;
         }
       }
     }
