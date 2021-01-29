@@ -1,8 +1,14 @@
 function Bar() {
   return (
     <div className="bar">
-      <img src="../img/logo-react.png" alt="" />
-      <img src="../img/logo-bar.png" alt="" />
+      <div className="bar-position">
+        <div className="logo1">
+          <img src="../img/logo-react.png" alt="" />
+        </div>
+        <div className="logo2">
+          <img src="../img/logo-bar.png" alt="" />
+        </div>
+      </div>
     </div>
   );
 }
