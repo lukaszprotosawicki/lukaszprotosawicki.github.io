@@ -1,4 +1,71 @@
-.main {
+.content {
   height: 100vh;
   background-color: #161b22;
+}
+
+.photo-main {
+  display: block;
+  // position: absolute;
+  margin-left: 150px;
+  margin-top: -60px;
+  img {
+    border-radius: 200px;
+    border: 2px solid rgb(104, 98, 98);
+    width: 400%;
+    max-width: 300px;
+  }
+  .information {
+    h1 {
+      display: block;
+      width: 400px;
+    }
+  }
+}
+
+.content {
+  display: flex;
+}
+
+.img-link {
+  margin-left: 5px;
+}
+
+.information {
+  color: rgb(161, 160, 160);
+}
+
+.readme {
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 260px;
+  margin-right: 100px;
+  height: 75%;
+  width: 75%;
+  border-radius: 8px;
+  border: 1px solid rgb(104, 98, 98);
+  color: rgb(161, 160, 160);
+  div {
+    h1 {
+    }
+    div {
+      a {
+        text-decoration: none;
+        color: rgb(189, 163, 16);
+      }
+      p {
+        display: block;
+        margin-top: 10px;
+      }
+
+      .skills {
+        p {
+          img {
+            margin-left: 0;
+            padding-top: 5px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }
