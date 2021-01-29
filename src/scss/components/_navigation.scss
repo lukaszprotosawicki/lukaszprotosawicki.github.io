@@ -1,15 +1,17 @@
 .navigation {
   background-color: #0d1117;
-  .content-navigation {
-    margin-left: 500px;
-    text-align: right;
 
+  .content-navigation {
+    max-width: 100vh;
+    margin-left: 400px;
+    text-align: center;
+    display: flex;
+    height: 24px;
     ul {
       display: flex;
       li {
         margin-left: 30px;
         margin-right: 30px;
-
         a {
           font-size: 20px;
           text-decoration: none;
