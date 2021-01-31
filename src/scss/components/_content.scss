@@ -116,6 +116,7 @@
   .content {
     display: block;
     height: 100%;
+    width: 100%;
     .contener-information {
       margin: 0;
       .photo-main {
@@ -149,41 +150,123 @@
       }
     }
   }
-}
-.readme {
-  display: block;
-  margin: 20px 39vh 0px 210px;
-  padding: 20px;
-  height: min-content;
-  min-width: 50%;
-  width: auto; //width: min-content dla mobilki powinno dobrze wygladac
-  border-radius: 8px;
-  border: 1px solid rgb(104, 98, 98);
-  color: rgb(161, 160, 160);
-  div {
-    // padding-left: 5px;
-    h1 {
-    }
-    .reactgif {
-      padding: 10px;
-      padding-bottom: 15px;
-    }
-    // margin-left: 5px;
+
+  .readme {
+    display: block;
+    margin: 70px 20px 0px 20px;
+    padding: 20px;
+    height: min-content;
+    min-width: 50vw;
+    min-width: min-content; //width: min-content dla mobilki powinno dobrze wygladac
+    border-radius: 8px;
+    border: 1px solid rgb(104, 98, 98);
+    color: rgb(161, 160, 160);
     div {
-      a {
-        text-decoration: none;
-        color: rgb(189, 163, 16);
+      // padding-left: 5px;
+      h1 {
       }
-      p {
-        display: block;
-        margin-top: 20px;
+      .reactgif {
+        padding: 10px;
+        padding-bottom: 15px;
       }
-      .skills {
+      // margin-left: 5px;
+      div {
+        a {
+          text-decoration: none;
+          color: rgb(189, 163, 16);
+        }
         p {
-          img {
-            margin-left: 0;
-            padding-top: 5px;
-            display: block;
+          display: block;
+          margin-top: 20px;
+        }
+        .skills {
+          p {
+            img {
+              margin-left: 0;
+              padding-top: 5px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 480px) {
+  .content {
+    display: block;
+    height: 100%;
+    width: 100%;
+    .contener-information {
+      margin: 0;
+      .photo-main {
+        display: flex;
+        padding-top: -40px;
+
+        // position: absolute;
+        // margin-left: 50vw;
+        margin-top: -60px;
+        .photo-me {
+          border-radius: 200px;
+          border: 2px solid rgb(104, 98, 98);
+          width: 20vw;
+          min-width: 100px;
+        }
+        .information {
+          h1 {
+            display: flex;
+            padding-top: 24px;
+            padding-left: 24px;
+            width: 310px;
+            // width: 30%;
+          }
+          p {
+            display: none;
+          }
+          .logo4 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .readme {
+    display: block;
+    margin: 70px 20px 0px 20px;
+    padding: 20px;
+    height: min-content;
+    min-width: 50vw;
+    min-width: min-content; //width: min-content dla mobilki powinno dobrze wygladac
+    border-radius: 8px;
+    border: 1px solid rgb(104, 98, 98);
+    color: rgb(161, 160, 160);
+    div {
+      // padding-left: 5px;
+      h1 {
+      }
+      .reactgif {
+        padding: 10px;
+        padding-bottom: 15px;
+        width: 100%;
+      }
+      // margin-left: 5px;
+      div {
+        a {
+          text-decoration: none;
+          color: rgb(189, 163, 16);
+        }
+        p {
+          display: block;
+          margin-top: 20px;
+        }
+        .skills {
+          p {
+            img {
+              margin-left: 0;
+              padding-top: 5px;
+              display: block;
+            }
           }
         }
       }

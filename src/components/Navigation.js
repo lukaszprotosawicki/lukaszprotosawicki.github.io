@@ -3,7 +3,9 @@ function Navigation() {
     <div className="navigation">
       <div className="content-navigation">
         <ul>
-          <a href="#a">About me</a>
+          <a className="about-me" href="#a">
+            About me
+          </a>
 
           <a href="#a">Projects</a>
 
