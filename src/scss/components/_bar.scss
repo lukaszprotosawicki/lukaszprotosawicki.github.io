@@ -5,6 +5,7 @@
   height: 100px;
   .bar-position {
     // max-width: 100vh;
+    padding-left: 10px;
     text-align: center;
     display: flex;
     .logo1 img {
@@ -100,4 +101,64 @@
       }
     }
   }
+}
+
+.hamburger {
+  padding: 20px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+}
+
+.hamburger-box {
+  margin: 10px;
+  width: 35px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+@mixin hamburger-line {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.hamburger-inner {
+  @include hamburger-line;
+
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  @include hamburger-line;
+
+  content: "";
+
+  left: 0;
+}
+.hamburger-inner::before {
+  top: -10px;
+}
+.hamburger-inner::after {
+  top: 10px;
+}
+
+.hamburger--active .hamburger-inner {
+  background-color: transparent;
+}
+
+.hamburger--active .hamburger-inner::before {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger--active .hamburger-inner::after {
+  transform: translateY(-10px) rotate(-45deg);
 }
