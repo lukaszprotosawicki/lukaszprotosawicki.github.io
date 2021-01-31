@@ -1,6 +1,11 @@
 function Bar() {
   return (
     <div className="bar">
+      <button className="hamburger">
+        <span className="hamburger-box">
+          <span className="hamburger-inner"></span>
+        </span>
+      </button>
       <div className="bar-position">
         <div className="logo3">
           <img src="../img/reactgif.gif" alt="" />

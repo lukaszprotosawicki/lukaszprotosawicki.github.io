@@ -6,9 +6,7 @@ function Navigation() {
           <a className="about-me" href="#a">
             About me
           </a>
-
           <a href="#a">Projects</a>
-
           <a href="#a">Contact</a>
         </ul>
       </div>
