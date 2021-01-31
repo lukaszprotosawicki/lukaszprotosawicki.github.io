@@ -2,7 +2,7 @@ function Bar() {
   return (
     <div className="bar">
       <div className="bar-position">
-        <button className="hamburger hamburger--active">
+        <button className="hamburger">
           <span className="hamburger-box">
             <span className="hamburger-inner"></span>
           </span>

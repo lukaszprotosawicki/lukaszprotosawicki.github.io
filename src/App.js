@@ -1,6 +1,7 @@
 import Navigation from "./components/Navigation";
 import Bar from "./components/Bar";
 import Content from "./components/Content";
+
 // import Profile from "./components/Profile";
 // import { Profiler } from "react";
 
