@@ -1,9 +1,10 @@
 .bar {
+  width: 100%;
   padding-top: 10px;
   background-color: #000000;
   height: 100px;
   .bar-position {
-    max-width: 100vh;
+    // max-width: 100vh;
     text-align: center;
     display: flex;
     .logo1 img {
@@ -25,8 +26,9 @@
   .bar {
     background-color: #000000;
     height: 130px;
+    width: 100%;
     .bar-position {
-      max-width: 100vh;
+      // max-width: 100vh;
       text-align: center;
       display: flex;
       .logo1 img {
@@ -49,8 +51,9 @@
   .bar {
     background-color: #000000;
     height: 130px;
+    width: 100%;
     .bar-position {
-      max-width: 100vh;
+      // max-width: 100vh;
       text-align: center;
       display: flex;
       .logo1 img {

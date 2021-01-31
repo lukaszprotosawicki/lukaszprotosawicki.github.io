@@ -5,7 +5,7 @@ function Content() {
         <div className="photo-main">
           <img className="photo-me" src="../img/mainphoto.png" alt="" />
           <div className="information">
-            <h1>Łukasz Protosawicki</h1>
+            <h2>Łukasz Protosawicki</h2>
             <p className="city"> 🛰️ Gorzów Wielkopolski</p>
             <p>
               🔗

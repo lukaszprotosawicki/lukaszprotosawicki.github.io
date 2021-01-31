@@ -1,7 +1,8 @@
 .navigation {
+  width: 100%;
   background-color: #0d1117;
   .content-navigation {
-    max-width: 100vh;
+    max-width: 100vw;
     text-align: center;
     display: flex;
     height: 24px;
@@ -24,12 +25,12 @@
   .navigation {
     display: block;
     position: absolute;
-    margin-top: 60px;
-    width: 94%;
+    margin-top: 70px;
+    width: 92vw;
     border: 1px solid rgba(104, 98, 98, 0.452);
     border-radius: 4px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 17px;
+    // margin-right: 20px;
     .content-navigation {
       display: block;
       height: 24px;
@@ -59,7 +60,7 @@
   .navigation {
     display: block;
     position: absolute;
-    margin-top: 60px;
+    margin-top: 70px;
     width: 94%;
     border: 1px solid rgba(104, 98, 98, 0.452);
     border-radius: 4px;

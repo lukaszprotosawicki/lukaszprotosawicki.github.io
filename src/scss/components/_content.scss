@@ -1,7 +1,7 @@
 .content {
   height: 100vh;
   // min-height: 100%;
-  width: 100vw;
+  width: 100%;
   // min-width: 100%;
   background-color: #161b22;
 }
@@ -20,14 +20,15 @@
       min-width: 100px;
     }
     .information {
-      h1 {
-        display: flex;
-        // width: 30vw;
+      h2 {
+        display: block;
+        width: 30vw;
       }
       p {
+        width: 30vw;
         a {
           display: inline-block;
-          width: 20vw;
+          width: 30vw;
         }
       }
     }
@@ -58,8 +59,8 @@
   color: rgb(161, 160, 160);
   p {
     margin-top: 20px;
-    display: block;
-    width: 100vh;
+    display: flex;
+    width: 100%;
     a {
       text-decoration: none;
       color: rgb(64, 110, 238);
@@ -111,6 +112,9 @@
 }
 
 @media all and (max-width: 850px) {
+  .content {
+    height: auto;
+  }
   .readme {
     div {
       // padding-left: 5px;
@@ -126,16 +130,13 @@
 @media all and (min-width: 480px) and (max-width: 700px) {
   .content {
     display: block;
-    // height: 100%;
+    height: 116vh;
     width: 100%;
     .contener-information {
       margin: 0;
       .photo-main {
         display: flex;
         padding-top: -40px;
-
-        // position: absolute;
-        // margin-left: 50vw;
         margin-top: -60px;
         .photo-me {
           border-radius: 200px;
@@ -145,6 +146,7 @@
         }
         .information {
           .city {
+            width: 20vh;
             display: block;
             margin-left: 22px;
             margin-top: 1px;
@@ -152,9 +154,9 @@
           .email {
             display: block;
             margin-left: 22px;
-            margin-top: 4px;
+            margin-top: 6px;
           }
-          h1 {
+          h2 {
             display: flex;
             padding-top: 24px;
             padding-left: 24px;
@@ -230,6 +232,10 @@
           min-width: 100px;
         }
         .information {
+          // width: 20vw;
+          h2 {
+            max-width: 60vw;
+          }
           .city {
             width: 20vh;
             display: inline-block;
@@ -239,13 +245,13 @@
           .email {
             display: block;
             margin-left: 22px;
-            margin-top: 4px;
+            margin-top: 6px;
             .email-img {
               min-width: 20px;
               max-width: 50vw;
             }
           }
-          h1 {
+          h2 {
             display: flex;
             padding-top: 24px;
             padding-left: 24px;
