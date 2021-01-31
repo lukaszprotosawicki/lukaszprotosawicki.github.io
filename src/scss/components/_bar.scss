@@ -4,7 +4,6 @@
   height: 100px;
   .bar-position {
     max-width: 100vh;
-    margin-left: 400px;
     text-align: center;
     display: flex;
     .logo1 img {
@@ -13,6 +12,36 @@
     .logo2 img {
       margin-left: 40px;
       height: 80px;
+    }
+    .logo3 {
+      img {
+        height: 80px;
+        padding-left: 20px;
+      }
+    }
+  }
+}
+@media all and (min-width: 480px) and (max-width: 700px) {
+  .bar {
+    background-color: #000000;
+    height: 130px;
+    .bar-position {
+      max-width: 100vh;
+      text-align: center;
+      display: flex;
+      .logo1 img {
+        height: 50px;
+      }
+      .logo2 img {
+        margin-left: 40px;
+        height: 50px;
+      }
+      .logo3 {
+        img {
+          height: 50px;
+          padding-left: 20px;
+        }
+      }
     }
   }
 }

@@ -2,6 +2,9 @@ function Bar() {
   return (
     <div className="bar">
       <div className="bar-position">
+        <div className="logo3">
+          <img src="../img/reactgif.gif" alt="" />
+        </div>
         <div className="logo1">
           <img src="../img/logo-react.png" alt="" />
         </div>

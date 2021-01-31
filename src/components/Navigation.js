@@ -3,15 +3,11 @@ function Navigation() {
     <div className="navigation">
       <div className="content-navigation">
         <ul>
-          <li>
-            <a href="#a">About me</a>
-          </li>
-          <li>
-            <a href="#a">Projects</a>
-          </li>
-          <li>
-            <a href="#a">Contact</a>
-          </li>
+          <a href="#a">About me</a>
+
+          <a href="#a">Projects</a>
+
+          <a href="#a">Contact</a>
         </ul>
       </div>
     </div>

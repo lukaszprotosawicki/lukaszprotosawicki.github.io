@@ -1,23 +1,35 @@
 .content {
   height: 100vh;
+  // min-height: 100%;
+  width: 100vw;
+  // min-width: 100%;
   background-color: #161b22;
 }
+.contener-information {
+  width: 12%;
+  .photo-main {
+    display: block;
 
-.photo-main {
-  display: block;
-  // position: absolute;
-  margin-left: 150px;
-  margin-top: -60px;
-  img {
-    border-radius: 200px;
-    border: 2px solid rgb(104, 98, 98);
-    width: 400%;
-    max-width: 300px;
-  }
-  .information {
-    h1 {
-      display: block;
-      width: 400px;
+    // position: absolute;
+    margin-left: 5vw;
+    margin-top: -60px;
+    .photo-me {
+      border-radius: 200px;
+      border: 2px solid rgb(104, 98, 98);
+      width: 20vw;
+      min-width: 100px;
+    }
+    .information {
+      h1 {
+        display: flex;
+        // width: 30vw;
+      }
+      p {
+        a {
+          display: inline-block;
+          width: 20vw;
+        }
+      }
     }
   }
 }
@@ -30,15 +42,27 @@
   margin-left: 5px;
 }
 
+.email-img {
+  min-width: 25vh;
+  border-radius: 200px;
+  border: 2px solid rgb(104, 98, 98);
+}
+
+.logo4 img {
+  padding-top: 20px;
+  width: 90%;
+}
+
 .information {
+  width: 22vw;
   color: rgb(161, 160, 160);
   p {
     margin-top: 20px;
-    display: flex;
+    display: block;
     width: 100vh;
     a {
       text-decoration: none;
-      color: rgb(161, 160, 160);
+      color: rgb(64, 110, 238);
     }
     a:hover {
       color: rgb(26, 104, 192);
@@ -48,20 +72,24 @@
 }
 
 .readme {
-  margin: 0 500px;
+  display: block;
+  margin: 20px 39vh 0px 210px;
   padding: 20px;
-  margin-top: 20px;
-  margin-left: 260px;
-  // margin-right: 100px;
-  height: 75%;
-  width: 75%;
-  max-width: 900px;
+  height: min-content;
+  min-width: 50%;
+  width: auto; //width: min-content dla mobilki powinno dobrze wygladac
   border-radius: 8px;
   border: 1px solid rgb(104, 98, 98);
   color: rgb(161, 160, 160);
   div {
+    // padding-left: 5px;
     h1 {
     }
+    .reactgif {
+      padding: 10px;
+      padding-bottom: 15px;
+    }
+    // margin-left: 5px;
     div {
       a {
         text-decoration: none;
@@ -71,7 +99,85 @@
         display: block;
         margin-top: 20px;
       }
+      .skills {
+        p {
+          img {
+            margin-left: 0;
+            padding-top: 5px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
 
+@media all and (min-width: 480px) and (max-width: 700px) {
+  .content {
+    display: block;
+    height: 100%;
+    .contener-information {
+      margin: 0;
+      .photo-main {
+        display: flex;
+        padding-top: -40px;
+
+        // position: absolute;
+        // margin-left: 50vw;
+        margin-top: -60px;
+        .photo-me {
+          border-radius: 200px;
+          border: 2px solid rgb(104, 98, 98);
+          width: 20vw;
+          min-width: 100px;
+        }
+        .information {
+          h1 {
+            display: flex;
+            padding-top: 24px;
+            padding-left: 24px;
+            width: 310px;
+            // width: 30%;
+          }
+          p {
+            display: none;
+          }
+          .logo4 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+.readme {
+  display: block;
+  margin: 20px 39vh 0px 210px;
+  padding: 20px;
+  height: min-content;
+  min-width: 50%;
+  width: auto; //width: min-content dla mobilki powinno dobrze wygladac
+  border-radius: 8px;
+  border: 1px solid rgb(104, 98, 98);
+  color: rgb(161, 160, 160);
+  div {
+    // padding-left: 5px;
+    h1 {
+    }
+    .reactgif {
+      padding: 10px;
+      padding-bottom: 15px;
+    }
+    // margin-left: 5px;
+    div {
+      a {
+        text-decoration: none;
+        color: rgb(189, 163, 16);
+      }
+      p {
+        display: block;
+        margin-top: 20px;
+      }
       .skills {
         p {
           img {
