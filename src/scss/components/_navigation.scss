@@ -23,7 +23,7 @@
 
 @media all and (min-width: 480px) and (max-width: 700px) {
   .navigation {
-    display: block;
+    display: none;
     position: absolute;
     margin-top: 70px;
     width: 92vw;
@@ -57,37 +57,7 @@
 }
 
 @media all and (max-width: 480px) {
-  //   .navigation {
-  //     display: block;
-  //     position: absolute;
-  //     margin-top: 70px;
-  //     width: 94%;
-  //     border: 1px solid rgba(104, 98, 98, 0.452);
-  //     border-radius: 4px;
-  //     margin-left: 20px;
-  //     margin-right: 20px;
-  //     .content-navigation {
-  //       display: block;
-  //       height: 24px;
-  //       ul {
-  //         margin: 0 auto;
-  //         .about-me {
-  //           margin-left: 1px;
-  //         }
-  //         a {
-  //           margin-left: 54px;
-  //           display: inline-flex;
-  //           padding-right: 3px;
-  //           font-size: 20px;
-  //           text-decoration: none;
-  //           color: rgb(138, 136, 136);
-  //         }
-  //         a:hover {
-  //           color: rgb(224, 222, 222);
-  //           transition: 0.5s;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  .navigation {
+    display: none;
+  }
 }
