@@ -6,7 +6,7 @@ function Content() {
           <img className="photo-me" src="../img/mainphoto.png" alt="" />
           <div className="information">
             <h1>Łukasz Protosawicki</h1>
-            <p> 🛰️ Gorzów Wielkopolski</p>
+            <p className="city"> 🛰️ Gorzów Wielkopolski</p>
             <p>
               🔗
               <a
@@ -27,7 +27,7 @@ function Content() {
               </a>{" "}
             </p>
             <p> 💬 Ask me about anything, reach me:</p>
-            <p>
+            <p className="email">
               <a href="mailto:lukaszprotosawicki@gmail.com">
                 <img
                   className="email-img"

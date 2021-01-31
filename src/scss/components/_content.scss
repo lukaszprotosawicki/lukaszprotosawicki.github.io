@@ -112,6 +112,21 @@
   }
 }
 
+@media all and (max-width: 850px) {
+  .readme {
+    div {
+      // padding-left: 5px;
+      h1 {
+      }
+      .reactgif {
+        padding: 10px;
+        padding-bottom: 15px;
+        width: 100%;
+      }
+    }
+  }
+}
+
 @media all and (min-width: 480px) and (max-width: 700px) {
   .content {
     display: block;
@@ -133,6 +148,16 @@
           min-width: 100px;
         }
         .information {
+          .city {
+            display: block;
+            margin-left: 22px;
+            margin-top: 1px;
+          }
+          .email {
+            display: block;
+            margin-left: 22px;
+            margin-top: 4px;
+          }
           h1 {
             display: flex;
             padding-top: 24px;
@@ -168,6 +193,7 @@
       .reactgif {
         padding: 10px;
         padding-bottom: 15px;
+        width: 300px;
       }
       // margin-left: 5px;
       div {
@@ -202,9 +228,6 @@
       .photo-main {
         display: flex;
         padding-top: -40px;
-
-        // position: absolute;
-        // margin-left: 50vw;
         margin-top: -60px;
         .photo-me {
           border-radius: 200px;
@@ -213,6 +236,23 @@
           min-width: 100px;
         }
         .information {
+          h1 {
+          }
+          .city {
+            width: 20vh;
+            display: inline-block;
+            margin-left: 22px;
+            margin-top: 1px;
+          }
+          .email {
+            display: block;
+            margin-left: 22px;
+            margin-top: 4px;
+            .email-img {
+              min-width: 20px;
+              max-width: 50vw;
+            }
+          }
           h1 {
             display: flex;
             padding-top: 24px;
