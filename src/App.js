@@ -1,13 +1,12 @@
 import Navigation from "./components/Navigation";
 import Bar from "./components/Bar";
 import Content from "./components/Content";
-
-// import Profile from "./components/Profile";
-// import { Profiler } from "react";
+import Hamburger from "./components/Hamburger";
 
 function App() {
   return (
     <div className="app">
+      <Hamburger />
       <Bar />
       <Navigation />
       <div className="contents">

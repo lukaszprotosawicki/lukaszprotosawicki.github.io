@@ -2,11 +2,7 @@ function Bar() {
   return (
     <div className="bar">
       <div className="bar-position">
-        <button className="hamburger">
-          <span className="hamburger-box">
-            <span className="hamburger-inner"></span>
-          </span>
-        </button>
+        {/* <Hamburger /> */}Hamburger
         <div className="logo3">
           <img src="../img/reactgif.gif" alt="" />
         </div>
