@@ -2,7 +2,6 @@ function Bar() {
   return (
     <div className="bar">
       <div className="bar-position">
-        {/* <Hamburger /> */}Hamburger
         <div className="logo3">
           <img src="../img/reactgif.gif" alt="" />
         </div>

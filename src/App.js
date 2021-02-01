@@ -1,14 +1,14 @@
-import Navigation from "./components/Navigation";
+// import Navigation from "./components/Navigation";
 import Bar from "./components/Bar";
 import Content from "./components/Content";
-import Hamburger from "./components/nav/Navbar";
+import Navbar from "./components/nav/Navbar";
 
 function App() {
   return (
     <div className="app">
-      <Hamburger />
+      {/* <Hamburger /> */}
       <Bar />
-      <Navigation />
+      <Navbar />
       <div className="contents">
         <Content />
 
