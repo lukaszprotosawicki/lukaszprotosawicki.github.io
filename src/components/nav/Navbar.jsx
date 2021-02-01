@@ -3,6 +3,7 @@ import Rightbar from './Rightnav'
 import Burger from './Burger'
 
 
+
 const Navbar = () => {
     return (
         <div className="nav">
