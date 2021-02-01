@@ -75,10 +75,10 @@
   }
 }
 
-@media all and (max-width: 300px) {
+@media all and (max-width: 320px) {
   .bar {
     background-color: #000000;
-    height: 130px;
+    height: 70px;
     width: 100%;
     .bar-position {
       // max-width: 100vh;

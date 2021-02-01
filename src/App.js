@@ -6,13 +6,10 @@ import Navbar from "./components/nav/Navbar";
 function App() {
   return (
     <div className="app">
-      {/* <Hamburger /> */}
       <Bar />
       <Navbar />
       <div className="contents">
         <Content />
-
-        {/* <Profile /> */}
       </div>
     </div>
   );
