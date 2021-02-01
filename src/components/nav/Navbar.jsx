@@ -1,5 +1,6 @@
 import React from 'react'
 import Rightbar from './Rightnav'
+import Burger from './Burger'
 
 
 const Navbar = () => {
@@ -8,6 +9,7 @@ const Navbar = () => {
             <div className="logo">
                 App
             </div>
+            <Burger/>
             <Rightbar/>
         </div>
     )

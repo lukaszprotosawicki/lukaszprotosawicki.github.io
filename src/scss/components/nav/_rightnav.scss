@@ -4,7 +4,7 @@ ul {
   flex-flow: row nowrap;
 
   li {
-    margin-left: 100px;
+    margin-left: 80px;
     padding: 10px 10px;
     color: rgb(138, 136, 136);
     font-size: 20px;
@@ -16,13 +16,17 @@ ul {
   }
 
   @media (max-width: 760px) {
+    display: none;
     flex-flow: column nowrap;
     background-color: rgb(158, 34, 34);
     position: fixed;
     top: 0;
-    right: 0;
-    height: 80vh;
-    width: 300px;
+    left: 0;
+    height: 24vh;
+    width: 200px;
     padding-top: 3.5rem;
+    li {
+      margin-left: 10px;
+    }
   }
 }
