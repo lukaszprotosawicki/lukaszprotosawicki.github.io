@@ -1,7 +1,7 @@
 import Navigation from "./components/Navigation";
 import Bar from "./components/Bar";
 import Content from "./components/Content";
-import Hamburger from "./components/Hamburger";
+import Hamburger from "./components/nav/Navbar";
 
 function App() {
   return (

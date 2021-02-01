@@ -1,12 +1,9 @@
 import React from 'react'
 
 
-const Hamburger = () => {
+const Rightbar = () => {
     return (
-        <div className="nav">
-            <div className="logo">
-                App
-            </div>
+        <div>
             <ul>
                 <li>About Me</li>
                 <li>Projects</li>
@@ -16,4 +13,4 @@ const Hamburger = () => {
     )
 }
 
-export default Hamburger
+export default Rightbar
