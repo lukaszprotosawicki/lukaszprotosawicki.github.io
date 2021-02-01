@@ -4,10 +4,14 @@
   position: fixed;
   top: 15px;
   left: 20px;
-
+  display: fixed;
+  justify-content: space-around;
+  flex-flow: column nowrap;
   .button-nav {
+    margin-top: 8px;
     width: 2rem;
     height: 0.25rem;
     background-color: #fff;
+    border-radius: 10px;
   }
 }
