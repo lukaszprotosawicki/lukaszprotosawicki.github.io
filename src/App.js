@@ -2,11 +2,12 @@
 import Bar from "./components/Bar";
 import Content from "./components/Content";
 import Navbar from "./components/nav/Navbar";
+import Nav from "./Nav";
 
 function App() {
   return (
     <div className="app">
-      <h1>App</h1>
+      <div></div>
       <Bar />
       <Navbar />
       <div className="contents">

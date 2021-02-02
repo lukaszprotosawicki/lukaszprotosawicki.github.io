@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import Aboutme from "../Aboutme";
+import Projects from "../Projects";
+import Contact from "../Contact";
 
 const UL = styled.ul `
     list-style: none;
@@ -42,9 +44,11 @@ const Rightnav = ({open}) => {
     return (
          <UL open={open}>
             <li>About Me</li>
-            
             <li>Projects</li>
             <li>Contact</li>
+            <Aboutme />
+            <Projects />
+            <Contact />
         </UL>
     )
 }
