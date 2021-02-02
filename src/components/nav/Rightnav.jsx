@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Aboutme from "../Aboutme";
 import Projects from "../Projects";
 import Contact from "../Contact";
-import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const UL = styled.ul `
     list-style: none;
@@ -46,11 +46,19 @@ const UL = styled.ul `
 const Rightnav = ({open}) => {
     return (
       <Router>
-        <UL open={open}>
-            <li><Route path="/aboutme" component={Aboutme} />About Me</li>
-            <li><Route path="projects" component={Projects} />Projects</li>
-            <li><Route path="contact" component={Contact} />Contact</li>
-        </UL>
+        <Switch>
+          <UL open={open}>
+            <Link to="/aboutme">
+            <li>About Me<Route path="/aboutme" component={Aboutme} /></li>
+            </Link>
+            <Link to="/projects">
+            <li>Projects<Route path="/projects" component={Projects} /></li>
+            </Link>
+            <Link to="/contact">
+            <li>Contact<Route path="/contact" component={Contact} /></li>
+            </Link>
+          </UL>
+        </Switch>
       </Router>
     )
 }
