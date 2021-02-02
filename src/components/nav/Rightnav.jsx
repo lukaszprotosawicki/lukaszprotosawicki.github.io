@@ -42,6 +42,7 @@ const Rightnav = ({open}) => {
     return (
          <UL open={open}>
             <li>About Me</li>
+            
             <li>Projects</li>
             <li>Contact</li>
         </UL>
