@@ -2,7 +2,6 @@
 import Bar from "./components/Bar";
 import Content from "./components/Content";
 import Navbar from "./components/nav/Navbar";
-import Nav from "./Nav";
 
 function App() {
   return (
