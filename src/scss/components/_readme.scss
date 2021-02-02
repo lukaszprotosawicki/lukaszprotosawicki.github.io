@@ -1,0 +1,38 @@
+.readme {
+  display: none;
+  margin: 20px 39vh 0px 210px;
+  padding: 20px;
+  height: min-content;
+  min-width: 50%;
+  width: auto; //width: min-content dla mobilki powinno dobrze wygladac
+  border-radius: 8px;
+  border: 1px solid rgb(104, 98, 98);
+  color: rgb(161, 160, 160);
+  div {
+    // padding-left: 5px;
+    .reactgif {
+      padding: 10px;
+      padding-bottom: 15px;
+    }
+    // margin-left: 5px;
+    div {
+      a {
+        text-decoration: none;
+        color: rgb(189, 163, 16);
+      }
+      p {
+        display: block;
+        margin-top: 20px;
+      }
+      .skills {
+        p {
+          img {
+            margin-left: 0;
+            padding-top: 5px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -75,6 +75,15 @@
   }
 }
 
+.box_content {
+  display: block;
+  margin: 20px 39vh 0px 210px;
+  padding: 20px;
+
+  min-width: 50%;
+  width: auto; //width: min-content dla mobilki powinno dobrze wygladac
+}
+
 .readme {
   display: block;
   margin: 20px 39vh 0px 210px;

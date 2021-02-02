@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0 auto;
+  text-decoration: none;
 }
 
 body {
@@ -11,3 +12,5 @@ body {
 @import "./components/bar";
 @import "./components/content";
 @import "./components/profile";
+@import "./components/projects";
+@import "./components/contact";

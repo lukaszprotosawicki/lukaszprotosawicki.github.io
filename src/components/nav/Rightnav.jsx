@@ -2,13 +2,14 @@ import React from 'react'
 import styled from 'styled-components';
 import Projects from "../Projects";
 import Contact from "../Contact";
+import Aboutme from "../Aboutme";
 import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const UL = styled.ul `
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
-  
+
     li {
         margin-left: 80px;
         padding: 10px 10px;
@@ -40,18 +41,16 @@ const UL = styled.ul `
   
 `;
 
-// App.js
-
 const Rightnav = ({open}) => {
     return (
       <Router>
         <Switch>
           <UL open={open}>
-            <Link to="/">
-            <li>About Me<Route path="/"  /></li>
+            <Link to="/aboutme">
+            <li>  About Me<Route path="/aboutme" component={Aboutme} /></li>
             </Link>
-            <Link to="/projects">
-            <li>Projects<Route path="/projects" component={Projects} /></li>
+            <Link to="/content">
+            <li>Projects<Route path="/content" component={Projects} /></li>
             </Link>
             <Link to="/contact">
             <li>Contact<Route path="/contact" component={Contact} /></li>
