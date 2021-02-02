@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import Aboutme from "../Aboutme";
 import Projects from "../Projects";
 import Contact from "../Contact";
 import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -48,8 +47,8 @@ const Rightnav = ({open}) => {
       <Router>
         <Switch>
           <UL open={open}>
-            <Link to="/aboutme">
-            <li>About Me<Route path="/aboutme" component={Aboutme} /></li>
+            <Link to="/">
+            <li>About Me<Route path="/"  /></li>
             </Link>
             <Link to="/projects">
             <li>Projects<Route path="/projects" component={Projects} /></li>
