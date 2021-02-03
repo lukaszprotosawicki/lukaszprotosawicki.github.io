@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 import Projects from "../Projects";
 import Contact from "../Contact";
@@ -9,13 +9,16 @@ const UL = styled.ul `
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
-
+    padding-left: 140px;
   a {
-
-  
+    margin: 0px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    /* clear: both; */
+    text-align: center;
     li {
-      margin-left: 80px;
-      padding: 10px 10px;
+
+      padding: 10px 5px;
       color: rgb(138,136,136);
       font-size: 20px;
       cursor: pointer;
@@ -26,11 +29,11 @@ const UL = styled.ul `
         color: rgb(224, 222, 222);
         transition: 0.5s;
       }
-
+    }
       @media all and (min-width: 700px)  {
 
         a{
-          padding-left: -10px;
+
           li {
             width: 100%;
            }
@@ -39,19 +42,20 @@ const UL = styled.ul `
       }
 
     @media (max-width: 700px) {
+      padding-left: 0px;
       flex-flow: column nowrap;
       background-color: #161b28;
       position: fixed;
       transform: ${({open}) => open ? 'translateX(0)' : 'translateX(-100%)'};
       top: 0;
       left: 0;
-      width: 200px;
+      width: 180px;
       padding-top: 3.5rem;
       transition: transform 0.6s ease-in-out;
       li {
-        margin-left: 10px;
+        margin-left: -10px;
       }
-    }}
+    }
 `;
 
 const Rightnav = ({open}) => {

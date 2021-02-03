@@ -5,7 +5,6 @@ import Burger from './Burger';
 const Nav = styled.nav`
 
     width: 100%;
-    height: 44px;
     display: flex;
     background-color: #161b22;
     border-bottom: 1px solid rgb(77, 76, 76);
