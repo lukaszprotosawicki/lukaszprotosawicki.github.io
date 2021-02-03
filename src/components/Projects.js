@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import Content from "../components/Content";
+import Textprojects from "./Textprojects";
 
-import Readme from "./Readme";
 const Nav = styled.nav`
   display: flex;
 `;
-const Projects = () => {
+function Projects() {
   return (
     <Nav>
       <Content />
-      <Readme />
+      <Textprojects />
     </Nav>
   );
-};
+}
 
 export default Projects;

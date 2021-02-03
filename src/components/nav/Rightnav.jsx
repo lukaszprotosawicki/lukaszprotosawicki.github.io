@@ -10,10 +10,12 @@ const UL = styled.ul `
     display: flex;
     flex-flow: row nowrap;
 
+  a {
 
+  
     li {
       margin-left: 80px;
-      padding: 10px 26px;
+      padding: 10px 10px;
       color: rgb(138,136,136);
       font-size: 20px;
       cursor: pointer;
@@ -26,7 +28,7 @@ const UL = styled.ul `
       }
 
       @media all and (min-width: 700px)  {
-        padding-left: 60px;
+
         a{
           padding-left: -10px;
           li {
@@ -49,7 +51,7 @@ const UL = styled.ul `
       li {
         margin-left: 10px;
       }
-    }
+    }}
 `;
 
 const Rightnav = ({open}) => {
@@ -60,7 +62,7 @@ const Rightnav = ({open}) => {
             <Link to="/">
             <li >  About Me</li>
             </Link>
-            <Link to="/content" >
+            <Link to="/projects" >
             <li>Projects</li>
             </Link>
             <Link to="/contact" >
@@ -71,7 +73,7 @@ const Rightnav = ({open}) => {
           ````<Route exact path="/">
               <Aboutme/>
               </Route>
-              <Route path="/content">
+              <Route path="/projects">
                <Projects />
               </Route>
               <Route path="/contact">
