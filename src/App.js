@@ -1,5 +1,5 @@
 import Bar from "./components/Bar";
-import Content from "./components/Content";
+
 import Navbar from "./components/nav/Navbar";
 
 function App() {
@@ -8,9 +8,7 @@ function App() {
       <div></div>
       <Bar />
       <Navbar />
-      <div className="contents">
-        <Content />
-      </div>
+      <div className="contents"></div>
     </div>
   );
 }

@@ -12,16 +12,13 @@ const UL = styled.ul `
 
 
     li {
-        margin-left: 80px;
-        padding: 10px 10px;
-        color: rgb(138, 136, 136);
-        font-size: 20px;
-        cursor: pointer;
-        clear: both;
-
-        text-align: center;
-     
-         magin-bottom: -50px;
+      margin-left: 80px;
+      padding: 10px 26px;
+      color: rgb(138,136,136);
+      font-size: 20px;
+      cursor: pointer;
+      /* clear: both; */
+      text-align: center;
       }
       li:hover {
         color: rgb(224, 222, 222);
