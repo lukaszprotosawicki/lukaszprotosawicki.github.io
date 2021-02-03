@@ -10,19 +10,35 @@ const UL = styled.ul `
     display: flex;
     flex-flow: row nowrap;
 
+
     li {
         margin-left: 80px;
         padding: 10px 10px;
         color: rgb(138, 136, 136);
         font-size: 20px;
         cursor: pointer;
+        clear: both;
+
+        text-align: center;
+     
+         magin-bottom: -50px;
       }
       li:hover {
         color: rgb(224, 222, 222);
         transition: 0.5s;
       }
 
-  
+      @media all and (min-width: 700px)  {
+        padding-left: 60px;
+        a{
+          padding-left: -10px;
+          li {
+            width: 100%;
+           }
+        }
+
+      }
+
     @media (max-width: 700px) {
       flex-flow: column nowrap;
       background-color: #161b28;
@@ -36,31 +52,41 @@ const UL = styled.ul `
       li {
         margin-left: 10px;
       }
-    
     }
-  
 `;
 
 const Rightnav = ({open}) => {
     return (
       <Router>
-        <Switch>
+        
           <UL open={open}>
-            <Link to="/aboutme">
-            <li>  About Me<Route path="/aboutme" component={Aboutme} /></li>
+            <Link to="/">
+            <li >  About Me</li>
             </Link>
-            <Link to="/content">
-            <li>Projects<Route path="/content" component={Projects} /></li>
+            <Link to="/content" >
+            <li>Projects</li>
             </Link>
-            <Link to="/contact">
-            <li>Contact<Route path="/contact" component={Contact} /></li>
+            <Link to="/contact" >
+            <li>Contact</li>
             </Link>
           </UL>
+          <Switch>
+          ````<Route exact path="/">
+              <Aboutme/>
+              </Route>
+              <Route path="/content">
+               <Projects />
+              </Route>
+              <Route path="/contact">
+              <Contact/>
+              </Route>
         </Switch>
       </Router>
+
     )
 }
 
-export default Rightnav
 
+
+export default Rightnav
 

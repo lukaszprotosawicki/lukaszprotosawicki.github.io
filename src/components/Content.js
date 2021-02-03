@@ -1,5 +1,3 @@
-import Readme from "./Readme";
-
 function Content() {
   return (
     <div className="content">
@@ -43,8 +41,6 @@ function Content() {
           </div>
         </div>
       </div>
-
-      <Readme />
     </div>
   );
 }

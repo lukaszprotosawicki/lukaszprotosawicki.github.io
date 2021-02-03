@@ -1,9 +1,11 @@
 import React from "react";
 
-import Readme from "./Readme";
-
 const Projects = () => {
-  return <Readme />;
+  return (
+    <div className="contener-projects">
+      <h1>Projects lucaretti</h1>
+    </div>
+  );
 };
 
 export default Projects;

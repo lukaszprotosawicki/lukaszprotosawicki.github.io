@@ -2,8 +2,16 @@ import React from "react";
 
 function Contact() {
   return (
-    <div>
-      <h1>Contact lucaretti</h1>
+    <div className="contener-contact">
+      <form id="contact-form">
+        <input type="text" name="user_name" placeholder="Name" />
+        <br />
+        <input type="email" name="user_email" placeholder="Email" />
+        <br />
+        <textarea name="message" placeholder="Message" />
+        <br />
+        <input type="submit" value="Send" />
+      </form>
     </div>
   );
 }

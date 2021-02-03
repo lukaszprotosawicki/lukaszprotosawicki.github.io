@@ -1,0 +1,24 @@
+.contener-contact {
+  display: block;
+  margin: 73px 12vh 0px -50vw;
+  padding: 20px;
+  height: min-content;
+  min-width: 342px;
+  width: 50vw;
+  //   position: absolute;
+  border-radius: 8px;
+  border: 1px solid #686262;
+  color: #a1a0a0;
+
+  #contact-form {
+    input {
+      min-width: 60px;
+    }
+    textarea {
+      max-height: 400px;
+      min-height: 180px;
+      max-width: 460px;
+      min-width: 177px;
+    }
+  }
+}
