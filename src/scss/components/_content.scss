@@ -1,5 +1,5 @@
 .content {
-  height: 105vh;
+  height: 70vh;
   // min-height: 100%;
   width: 100%;
   // min-width: 100%;
@@ -86,65 +86,10 @@
   width: auto; //width: min-content dla mobilki powinno dobrze wygladac
 }
 
-.readme {
-  display: block;
-  margin: 20px 39vh 0px 210px;
-  padding: 20px;
-  height: min-content;
-  min-width: 50%;
-  width: auto; //width: min-content dla mobilki powinno dobrze wygladac
-  border-radius: 8px;
-  border: 1px solid rgb(104, 98, 98);
-  color: rgb(161, 160, 160);
-  div {
-    // padding-left: 5px;
-    .reactgif {
-      padding: 10px;
-      padding-bottom: 15px;
-    }
-    // margin-left: 5px;
-    div {
-      a {
-        text-decoration: none;
-        color: rgb(189, 163, 16);
-      }
-      p {
-        display: block;
-        margin-top: 20px;
-      }
-      .skills {
-        p {
-          img {
-            margin-left: 0;
-            padding-top: 5px;
-            display: block;
-          }
-        }
-      }
-    }
-  }
-}
-
-// @media all and (max-width: 850px) {
-//   .content {
-//     height: auto;
-//   }
-//   .readme {
-//     div {
-//       // padding-left: 5px;
-//       .reactgif {
-//         padding: 10px;
-//         padding-bottom: 15px;
-//         width: 100%;
-//       }
-//     }
-//   }
-// }
-
 @media all and (min-width: 480px) and (max-width: 700px) {
   .content {
     display: block;
-    height: 100vh;
+    min-height: 120vh;
     width: 100%;
     .contener-information {
       margin: 50px 0;
@@ -164,6 +109,7 @@
         .information {
           .city {
             width: 20vh;
+            width: 200px;
             display: block;
             margin-left: 22px;
             margin-top: 1px;
@@ -194,7 +140,7 @@
 @media all and (max-width: 480px) {
   .content {
     display: block;
-    height: 100vh;
+    min-height: 130vh;
     width: 100%;
     padding-bottom: 30px;
     .contener-information {
@@ -247,136 +193,84 @@
       }
     }
   }
+}
 
-  .readme {
+@media all and (min-width: 300px) and (max-width: 395px) {
+  .content {
+    background-color: #161b22;
     display: block;
-    margin: 30px 20px 0px 20px;
-    padding: 20px;
-    height: min-content;
-    min-width: 50vw;
-    min-width: min-content; //width: min-content dla mobilki powinno dobrze wygladac
-    border-radius: 8px;
-    border: 1px solid rgb(104, 98, 98);
-    color: rgb(161, 160, 160);
-    div {
-      // padding-left: 5px;
-      .reactgif {
-        padding: 10px;
-        padding-bottom: 15px;
-        width: 100%;
-      }
-      // margin-left: 5px;
-      div {
-        a {
-          text-decoration: none;
-          color: rgb(189, 163, 16);
+    min-height: 150vh;
+    width: 100%;
+    padding-bottom: 30px;
+    .contener-information {
+      margin: 50px 0;
+      .photo-main {
+        display: flex;
+        padding-top: -40px;
+        margin-top: -60px;
+        .photo-me {
+          border-radius: 200px;
+          border: 2px solid rgb(104, 98, 98);
+          width: 20vw;
+          min-width: 100px;
         }
-        p {
-          display: block;
-          margin-top: 20px;
-        }
-        .skills {
-          p {
-            img {
-              margin-left: 0;
-              padding-top: 5px;
-              display: block;
+        .information {
+          // width: 20vw;
+          h2 {
+            max-width: 49vw;
+          }
+          .city {
+            max-width: 66vw;
+            display: flex;
+            width: 200px;
+            margin-left: 22px;
+            margin-top: 1px;
+          }
+          .email {
+            display: block;
+            margin-left: 22px;
+            margin-top: 6px;
+            .email-img {
+              min-width: 20px;
+              max-width: 46vw;
             }
+          }
+          h2 {
+            display: flex;
+            padding-top: 24px;
+            padding-left: 24px;
+            width: 290px;
+            // width: 30%;
+          }
+          p {
+            display: none;
+          }
+          .logo4 {
+            display: none;
           }
         }
       }
     }
   }
 }
-@media all and (min-width: 300px) and (max-width: 395px) {
-  .readme {
-    display: block;
-    margin: 50px 20px 0px 20px;
-    padding: 20px;
-    height: min-content;
-    min-width: 50vw;
-    min-width: min-content; //width: min-content dla mobilki powinno dobrze wygladac
-    border-radius: 8px;
-    border: 1px solid rgb(104, 98, 98);
-    color: rgb(161, 160, 160);
-    div {
-      // padding-left: 5px;
-      .reactgif {
-        padding: 10px;
-        padding-bottom: 15px;
-        width: 100%;
-      }
-      // margin-left: 5px;
-      div {
-        a {
-          text-decoration: none;
-          color: rgb(189, 163, 16);
-        }
-        p {
-          display: block;
-          margin-top: 20px;
-        }
-        .skills {
-          p {
-            img {
-              margin-left: 0;
-              padding-top: 5px;
-              display: block;
-            }
-          }
-        }
-      }
-    }
+@media all and (min-width: 320px) and (max-width: 330px) {
+  .content {
+    min-height: 170vh;
   }
 }
 
 @media all and (max-width: 300px) {
   .content {
+    background-color: #161b22;
+    height: 150vh;
     .contener-information {
       .photo-main {
         .information {
-          // width: 20vw;
           h2 {
             width: 24vw;
           }
-        }
-      }
-    }
-  }
-  .readme {
-    display: block;
-    margin: 45px 20px 0px 20px;
-    padding: 20px;
-    height: min-content;
-    min-width: 50vw;
-    min-width: min-content; //width: min-content dla mobilki powinno dobrze wygladac
-    border-radius: 8px;
-    border: 1px solid rgb(104, 98, 98);
-    color: rgb(161, 160, 160);
-    div {
-      // padding-left: 5px;
-      .reactgif {
-        padding: 10px;
-        padding-bottom: 15px;
-        width: 100%;
-      }
-      // margin-left: 5px;
-      div {
-        a {
-          text-decoration: none;
-          color: rgb(189, 163, 16);
-        }
-        p {
-          display: block;
-          margin-top: 20px;
-        }
-        .skills {
-          p {
-            img {
-              margin-left: 0;
-              padding-top: 5px;
-              display: block;
-            }
+          .city {
+            max-width: 58vw;
           }
         }
       }
