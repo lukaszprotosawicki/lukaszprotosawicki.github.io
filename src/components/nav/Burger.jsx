@@ -13,24 +13,31 @@ const StyledBurger = styled.div`
     left: 20px;
     z-index: 20;
     display:none;
-
-    @media (max-width: 700px){
+ 
+// style krzyzyka
+    @media (max-width: 700px){  
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;
+        background-color: ${({ open }) => open ? " #05090e " : " black "};
+    height: 44px;
+    width: 44px;
+    padding:  ${({ open }) => open ? " 6px 10px " : "  6px "};
+    border-radius: 6px;
     }
   
     div {
-
+        z-index: 1;
       width: 2rem;
       height: 0.25rem;
-      background-color: ${({ open }) => open ? " #ccc " : " #333 "};
+      background-color: white;
       border-radius: 10px;
       transform-origin: 1px;
       transition: all 0.3s linear;
-
+ 
         &:nth-child(1) {
         transform: ${({ open }) => open ? ' rotate(45deg)'  : ' rotate(0) '};
+        
         }
         &:nth-child(2) {
         transform: ${({ open }) => open ? ' translateX(-100%)'  : ' translateX(0) '};

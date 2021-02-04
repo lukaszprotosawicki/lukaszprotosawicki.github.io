@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 const UL = styled.ul `
     list-style: none;
     display: flex;
+    height: 40px;
     flex-flow: row nowrap;
     padding-left: 140px;
     z-index: 1;
@@ -18,6 +19,7 @@ const UL = styled.ul `
     cursor: pointer;
     /* clear: both; */
     text-align: center;
+    
     li {
 
       padding: 10px 5px;
@@ -46,10 +48,12 @@ const UL = styled.ul `
     @media (max-width: 700px) {
       padding-left: 0px;
       flex-flow: column nowrap;
-      background-color: #161b22;
+      background-color: rgb(5 9 14);
       position: fixed;
       transform: ${({open}) => open ? 'translateX(0)' : 'translateX(-100%)'};
       top: 0;
+      height: min-content;
+      border-radius: 0 56px 46px;
       left: 0;
       width: 180px;
       z-index: 1;
