@@ -10,6 +10,7 @@ const UL = styled.ul `
     display: flex;
     flex-flow: row nowrap;
     padding-left: 140px;
+    z-index: 1;
   a {
     margin: 0px 30px;
     font-size: 20px;
@@ -50,6 +51,7 @@ const UL = styled.ul `
       top: 0;
       left: 0;
       width: 180px;
+      z-index: 1;
       padding-top: 3.5rem;
       transition: transform 0.6s ease-in-out;
       li {

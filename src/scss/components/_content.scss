@@ -147,7 +147,9 @@
     height: 100vh;
     width: 100%;
     .contener-information {
-      margin: 0;
+      margin: 50px 0;
+      left: 0;
+      position: absolute;
       .photo-main {
         display: flex;
         padding-top: -40px;
@@ -188,55 +190,15 @@
       }
     }
   }
-
-  .readme {
-    display: block;
-    margin: 20px 20px 0px 20px;
-    padding: 20px;
-    height: min-content;
-    min-width: 50vw;
-    min-width: min-content; //width: min-content dla mobilki powinno dobrze wygladac
-    border-radius: 8px;
-    border: 1px solid rgb(104, 98, 98);
-    color: rgb(161, 160, 160);
-    div {
-      // padding-left: 5px;
-      .reactgif {
-        padding: 10px;
-        padding-bottom: 15px;
-        width: 300px;
-      }
-      // margin-left: 5px;
-      div {
-        a {
-          text-decoration: none;
-          color: rgb(189, 163, 16);
-        }
-        p {
-          display: block;
-          margin-top: 20px;
-        }
-        .skills {
-          p {
-            img {
-              margin-left: 0;
-              padding-top: 5px;
-              display: block;
-            }
-          }
-        }
-      }
-    }
-  }
 }
 @media all and (max-width: 480px) {
   .content {
     display: block;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     padding-bottom: 30px;
     .contener-information {
-      margin: 0;
+      margin: 50px 0;
       .photo-main {
         display: flex;
         padding-top: -40px;
@@ -250,11 +212,12 @@
         .information {
           // width: 20vw;
           h2 {
-            max-width: 56vw;
+            max-width: 49vw;
           }
           .city {
-            // width: 20vh;
-            display: inline-block;
+            max-width: 66vw;
+            display: flex;
+            width: 200px;
             margin-left: 22px;
             margin-top: 1px;
           }
