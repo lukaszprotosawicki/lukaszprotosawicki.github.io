@@ -42,7 +42,6 @@ const UL = styled.ul `
             width: 100%;
            }
         }
-
       }
 
     @media (max-width: 700px) {
@@ -68,29 +67,20 @@ const UL = styled.ul `
 const Rightnav = ({open}) => {
     return (
       <Router>
-        
-          <UL open={open}>
-            <Link to="/">
-            <li >  About Me</li>
-            </Link>
-            <Link to="/projects" >
-            <li>Projects</li>
-            </Link>
-            <Link to="/contact" >
-            <li>Contact</li>
-            </Link>
-          </UL>
+         <UL open={open} >
+        <nav>
+          <li><Link to={"/"}>About Me</Link></li>
+            <li><Link to={"/projects"} >Projects</Link></li>
+            <li> <Link to={"/contact"} >Contact</Link></li>
+            </nav>
+            </UL>
+            <br />
           <Switch>
-          ````<Route exact path="/">
-              <Aboutme/>
-              </Route>
-              <Route path="/projects">
-               <Projects />
-              </Route>
-              <Route path="/contact">
-              <Contact/>
-              </Route>
+              <Route exact path="/" component={Aboutme} />
+              <Route path="/projects" component={Projects}/>
+              <Route path="/contact" component={Contact}/>
         </Switch>
+    
       </Router>
 
     )

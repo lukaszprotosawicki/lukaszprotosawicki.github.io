@@ -9,6 +9,7 @@ function Readme() {
           <img
             src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif"
             width="30px"
+            alt=""
           />
           <p></p>
           My name is Lucas. 😁
@@ -55,7 +56,10 @@ function Readme() {
           </p>
           <div className="skills">
             <p>
-              <img src="https://img.shields.io/badge/Markup_Language-HTML5-%235d8239?logo=HTML5" />
+              <img
+                src="https://img.shields.io/badge/Markup_Language-HTML5-%235d8239?logo=HTML5"
+                alt=""
+              />
               <img
                 src="https://img.shields.io/badge/Style_Sheet_Language-CSS3-%235d8239?logo=CSS3&logoColor=blue"
                 alt=""

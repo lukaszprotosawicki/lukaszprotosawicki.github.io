@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Rightnav from './Rightnav';
 
-
-
 const StyledBurger = styled.div`
     
     width: 2rem;
@@ -48,7 +46,6 @@ const StyledBurger = styled.div`
         }
     }
 `;
-
 
 const Burger = () => {
 

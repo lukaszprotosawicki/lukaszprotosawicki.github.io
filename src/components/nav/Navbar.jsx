@@ -5,7 +5,7 @@ import Burger from './Burger';
 const Nav = styled.nav`
 
     width: 100%;
-    display: flex;
+    display: block;
     background-color: rgb(5 9 14);
     height: 47px;
     border-bottom: 1px solid #6d6d6d;
@@ -16,16 +16,9 @@ const Nav = styled.nav`
       padding: 15px 0;
     }
     @media (max-width: 700px) {
-
         height: 0;
-
       }
-  
-
 `
-
-
-
 const Navbar = () => {
     return (
         <Nav>

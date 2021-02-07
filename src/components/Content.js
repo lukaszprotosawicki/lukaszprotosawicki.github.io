@@ -32,6 +32,7 @@ function Content() {
                 <img
                   className="email-img"
                   src="https://img.shields.io/badge/Email-lukaszprotosawicki@gmail.com-blue?style=flat-square&logo=gmail"
+                  alt=""
                 />
               </a>
             </p>
