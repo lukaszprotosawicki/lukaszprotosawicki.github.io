@@ -42,7 +42,6 @@
 }
 
 .email-img {
-  // min-width: 25vh;
   border-radius: 200px;
   border: 2px solid rgb(104, 98, 98);
 }
@@ -74,7 +73,6 @@
   display: block;
   margin: 20px 39vh 0px 210px;
   padding: 20px;
-
   min-width: 50%;
   width: auto; //width: min-content dla mobilki powinno dobrze wygladac
 }
@@ -93,12 +91,6 @@
         padding-top: -40px;
         margin-top: -60px;
         position: unset;
-        .photo-me {
-          border-radius: 200px;
-          border: 2px solid rgb(104, 98, 98);
-          width: 20vw;
-          min-width: 100px;
-        }
         .information {
           .city {
             width: 20vh;
@@ -142,14 +134,7 @@
         display: flex;
         padding-top: -40px;
         margin-top: -60px;
-        .photo-me {
-          border-radius: 200px;
-          border: 2px solid rgb(104, 98, 98);
-          width: 20vw;
-          min-width: 100px;
-        }
         .information {
-          // width: 20vw;
           h2 {
             max-width: 49vw;
           }
@@ -170,17 +155,7 @@
             }
           }
           h2 {
-            display: flex;
-            padding-top: 24px;
-            padding-left: 24px;
             width: 290px;
-            // width: 30%;
-          }
-          p {
-            display: none;
-          }
-          .logo4 {
-            display: none;
           }
         }
       }
@@ -190,56 +165,16 @@
 
 @media all and (min-width: 300px) and (max-width: 395px) {
   .content {
-    background-color: #161b22;
-    display: block;
-    min-height: 150vh;
-    width: 100%;
-    padding-bottom: 30px;
     .contener-information {
-      margin: 50px 0;
       .photo-main {
-        display: flex;
-        padding-top: -40px;
-        margin-top: -60px;
         .photo-me {
-          border-radius: 200px;
-          border: 2px solid rgb(104, 98, 98);
-          width: 20vw;
-          min-width: 100px;
         }
         .information {
-          // width: 20vw;
           h2 {
             max-width: 49vw;
           }
           .city {
-            max-width: 66vw;
-            display: flex;
             width: 140px;
-            margin-left: 22px;
-            margin-top: 1px;
-          }
-          .email {
-            display: block;
-            margin-left: 22px;
-            margin-top: 6px;
-            .email-img {
-              min-width: 20px;
-              max-width: 46vw;
-            }
-          }
-          h2 {
-            display: flex;
-            padding-top: 24px;
-            padding-left: 24px;
-            width: 290px;
-            // width: 30%;
-          }
-          p {
-            display: none;
-          }
-          .logo4 {
-            display: none;
           }
         }
       }
