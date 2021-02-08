@@ -10,7 +10,10 @@
   width: 12em;
   font-size: 18px;
   padding: 10px 4px;
-  // margin: 0 9px 0 14px;
+}
+.contener-projects a:hover {
+  color: red;
+  transition: 0.4s;
 }
 @media all and (max-width: 480px) {
   .contener-projects {
