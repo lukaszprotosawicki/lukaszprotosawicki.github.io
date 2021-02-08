@@ -14,7 +14,6 @@ function Readme() {
           <p></p>
           My name is Lucas. 😁
         </h1>
-
         <div>
           <img
             className="reactgif"
@@ -23,7 +22,6 @@ function Readme() {
             alt="GIF"
             src="https://uploads.toptal.io/blog/image/92137/toptal-blog-image-1455717817638-f1c9424752a145ebf97219ec7a2d6cca.gif"
           />
-
           <p>
             Participation in the course Front-end Developer in
             <a className="img-link" href="https://infoshareacademy.com">

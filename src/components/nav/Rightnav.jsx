@@ -13,20 +13,16 @@ const UL = styled.ul `
     padding-left: 140px;
     z-index: 1;
     
-  a {
-    margin: 0px 30px;
-    font-size: 20px;
-    cursor: pointer;
-    /* clear: both; */
-    text-align: center;
+    nav {
+      display: flex;
+    }
     
     li {
-
       padding: 10px 5px;
       color: rgb(138,136,136);
       font-size: 20px;
       cursor: pointer;
-      /* clear: both; */
+      margin: 0 28px;
       text-align: center;
       }
       li:hover {
@@ -58,6 +54,10 @@ const UL = styled.ul `
       z-index: 1;
       padding-top: 3.5rem;
       transition: transform 0.6s ease-in-out;
+      nav {
+        display: block;
+        margin: 5px 0 10px 50px;
+      }
       li {
         margin-left: -10px;
       }
@@ -85,8 +85,6 @@ const Rightnav = ({open}) => {
 
     )
 }
-
-
 
 export default Rightnav
 

@@ -1,81 +1,57 @@
 .readme {
   display: block;
-  margin: 73px 12vh 0px -50vw;
+  margin: 40px 170px 0 0;
   padding: 20px;
   height: min-content;
-  min-width: 342px;
-  width: 50vw;
-  position: absolute;
+  min-width: 317px;
+  width: 55vw;
   border-radius: 8px;
   border: 1px solid #686262;
   color: #a1a0a0;
+}
+div {
+  .reactgif {
+    padding: 10px;
+    padding-bottom: 15px;
+    width: 100%;
+    max-width: 46%;
+    min-width: 190px;
+  }
   div {
-    // padding-left: 5px;
-    .reactgif {
-      padding: 10px;
-      padding-bottom: 15px;
-      width: 100%;
-      max-width: 50%;
-    }
-    // margin-left: 5px;
-    div {
+    p {
+      display: block;
+      margin-top: 20px;
       a {
         text-decoration: none;
         color: rgb(189, 163, 16);
       }
+    }
+    .skills {
       p {
-        display: block;
-        margin-top: 20px;
-      }
-      .skills {
-        p {
-          img {
-            margin-left: 0;
-            padding-top: 5px;
-            display: block;
-          }
+        img {
+          margin-left: 0;
+          padding-top: 5px;
+          display: block;
         }
       }
     }
   }
 }
+
+@media all and (min-width: 700px) and (max-width: 1090px) {
+  .readme {
+    margin: 40px 171px 0 317px;
+  }
+}
+
 @media all and (min-width: 480px) and (max-width: 700px) {
   .readme {
-    display: block;
-    margin: 111px 12vh 0px -26vw;
-    padding: 20px;
-    height: min-content;
+    margin: 111px 27% 0;
     min-width: 50vw;
-    min-width: min-content; //width: min-content dla mobilki powinno dobrze wygladac
-    border-radius: 8px;
-    border: 1px solid rgb(104, 98, 98);
-    color: rgb(161, 160, 160);
     div {
-      // padding-left: 5px;
       .reactgif {
-        padding: 10px;
-        padding-bottom: 15px;
-        width: 300px;
-      }
-      // margin-left: 5px;
-      div {
-        a {
-          text-decoration: none;
-          color: rgb(189, 163, 16);
-        }
-        p {
-          display: block;
-          margin-top: 20px;
-        }
-        .skills {
-          p {
-            img {
-              margin-left: 0;
-              padding-top: 5px;
-              display: block;
-            }
-          }
-        }
+        width: 100%;
+        max-width: none;
       }
     }
   }
@@ -83,87 +59,15 @@
 
 @media all and (max-width: 480px) {
   .readme {
-    display: block;
-    margin: 134px 12vh 0px -26vw;
-    padding: 20px;
-    height: min-content;
-    min-width: 50vw;
+    margin: 134px 21% 0;
     min-width: min-content; //width: min-content dla mobilki powinno dobrze wygladac
-    border-radius: 8px;
-    border: 1px solid rgb(104, 98, 98);
-    color: rgb(161, 160, 160);
-
-    div {
-      // padding-left: 5px;
-      .reactgif {
-        padding: 10px;
-        padding-bottom: 15px;
-        width: 100%;
-      }
-      // margin-left: 5px;
-      div {
-        a {
-          text-decoration: none;
-          color: rgb(189, 163, 16);
-        }
-        p {
-          display: block;
-          margin-top: 20px;
-        }
-        .skills {
-          p {
-            img {
-              margin-left: 0;
-              padding-top: 5px;
-              display: block;
-            }
-          }
-        }
-      }
-    }
   }
 }
 
 @media all and (min-width: 300px) and (max-width: 395px) {
   .readme {
-    display: block;
-    background-color: #161b22;
-    margin: 150px 12vh 0px -33vw;
-    padding: 20px;
-    height: min-content;
-    min-width: 50vw;
+    margin: 150px 21% 0;
     min-width: min-content; //width: min-content dla mobilki powinno dobrze wygladac
-    border-radius: 8px;
-    border: 1px solid rgb(104, 98, 98);
-    color: rgb(161, 160, 160);
-    div {
-      // padding-left: 5px;
-      .reactgif {
-        padding: 10px;
-        padding-bottom: 15px;
-        width: 100%;
-      }
-      // margin-left: 5px;
-      div {
-        a {
-          text-decoration: none;
-          color: rgb(189, 163, 16);
-        }
-        p {
-          display: block;
-          margin-top: 20px;
-        }
-        .skills {
-          p {
-            img {
-              margin-left: 0;
-              padding-top: 5px;
-              display: block;
-            }
-          }
-        }
-      }
-    }
   }
 }
 
