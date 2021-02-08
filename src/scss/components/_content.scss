@@ -137,6 +137,9 @@
         .information {
           h2 {
             max-width: 49vw;
+            display: flex;
+            padding-top: 24px;
+            padding-left: 24px;
           }
           .city {
             max-width: 66vw;
@@ -157,6 +160,12 @@
           h2 {
             width: 290px;
           }
+          p {
+            display: none;
+          }
+          .logo4 {
+            display: none;
+          }
         }
       }
     }
@@ -174,29 +183,37 @@
           .city {
             width: 140px;
           }
+          p {
+            display: none;
+          }
+          .logo4 {
+            display: none;
+          }
         }
       }
     }
-  }
-}
-@media all and (min-width: 320px) and (max-width: 330px) {
-  .content {
-    min-height: 170vh;
   }
 }
 
 @media all and (max-width: 300px) {
   .content {
     background-color: #161b22;
-    height: 150vh;
     .contener-information {
       .photo-main {
         .information {
           h2 {
-            width: 24vw;
+            width: 22vw;
+            font-size: 20px;
           }
           .city {
-            max-width: 50vw;
+            font-size: 14px;
+            max-width: 38vw;
+          }
+          p {
+            display: none;
+          }
+          .logo4 {
+            display: none;
           }
         }
       }
