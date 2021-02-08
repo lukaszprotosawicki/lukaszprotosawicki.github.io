@@ -7,37 +7,18 @@ function Textprojects() {
   return (
     <div className="readme">
       <div className="contener-projects">
-        <h1>My projects:</h1>
-      </div>
-      <div className="content-projects">
-        <div>
-          <p>Project 1</p>
-          <div className="box-project">
-            <a href="https://lukaszprotosawicki.github.io/New-Beginnings-Projects/project4/">
-              <img className="size-img" src={project1} alt="" />
-            </a>
-          </div>
-        </div>
-        <div>
-          <p>Project 2</p>
-          <div className="box-project">
-            <a href="https://lukaszprotosawicki.github.io/New-Beginnings-Projects/project3/">
-              <img className="size-img" src={project2} alt="" />
-            </a>
-          </div>
-        </div>
-        <div>
-          <p>Project 3</p>
-          <div className="box-project">
-            <a href="https://lukaszprotosawicki.github.io/New-Beginnings-Projects/project1/">
-              <img className="size-img" src={project3} alt="" />
-            </a>
-          </div>
-        </div>
-        <div>
-          <p>Project 4</p>
-          <div className="box-project"></div>
-        </div>
+        <a href="https://lukaszprotosawicki.github.io/">
+          Project Lukasz Protosawicki
+        </a>
+        <a href="stoper-firebase/">Project Stoper Firebase</a>
+        <a href="project-clime/index.html">Project Main</a>
+        <a href="project-shop/index.html">Project Shop </a>
+        <a href="project-gallery/index.html">Project Gallery</a>
+        <a href="project-stomatolog/">Project Stomatolog</a>
+        <a href="project-akordeon/">Project Akordeon</a>
+        <a href="project-calculator/">Project Calculator</a>
+        <a href="project-calculator-damage/">Project Calculator Damage</a>
+        <a href="project4-tic-tac-toe/">Project Tic Tac Toe</a>
       </div>
     </div>
   );

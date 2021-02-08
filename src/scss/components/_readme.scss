@@ -40,13 +40,13 @@ div {
 
 @media all and (min-width: 700px) and (max-width: 1090px) {
   .readme {
-    margin: 40px 171px 0 317px;
+    margin: 40px 171px 40px 317px;
   }
 }
 
 @media all and (min-width: 480px) and (max-width: 700px) {
   .readme {
-    margin: 111px 27% 0;
+    margin: 111px 27% 40px;
     min-width: 50vw;
     div {
       .reactgif {
@@ -59,21 +59,20 @@ div {
 
 @media all and (max-width: 480px) {
   .readme {
-    margin: 134px 21% 0;
+    margin: 134px 21% 40px;
     min-width: min-content; //width: min-content dla mobilki powinno dobrze wygladac
   }
 }
 
 @media all and (min-width: 300px) and (max-width: 395px) {
   .readme {
-    margin: 150px 21% 0;
+    margin: 150px 20% 40px 14%;
     min-width: min-content; //width: min-content dla mobilki powinno dobrze wygladac
   }
 }
 
 @media all and (max-width: 300px) {
   .readme {
-    margin: 141px 12vh 0px -42vw;
-    background-color: #161b22;
+    margin: 150px 20% 40px 9%;
   }
 }
