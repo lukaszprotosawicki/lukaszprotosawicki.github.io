@@ -19,13 +19,16 @@ const UL = styled.ul `
     
     li {
       padding: 10px 5px;
-      color: rgb(138,136,136);
+      
       font-size: 20px;
       cursor: pointer;
       margin: 0 28px;
       text-align: center;
+      a {
+        color: rgb(138,136,136);
       }
-      li:hover {
+      }
+      li a:hover {
         color: rgb(224, 222, 222);
         transition: 0.5s;
       }

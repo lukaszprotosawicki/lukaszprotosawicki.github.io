@@ -59,14 +59,14 @@ div {
 
 @media all and (max-width: 480px) {
   .readme {
-    margin: 134px 21% 40px;
+    margin: 134px 23% 40px;
     min-width: min-content; //width: min-content dla mobilki powinno dobrze wygladac
   }
 }
 
 @media all and (min-width: 300px) and (max-width: 395px) {
   .readme {
-    margin: 150px 20% 40px 14%;
+    margin: 150px 19% 40px 15%;
     min-width: min-content; //width: min-content dla mobilki powinno dobrze wygladac
   }
 }

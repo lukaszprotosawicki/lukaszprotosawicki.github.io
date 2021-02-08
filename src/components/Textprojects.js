@@ -1,7 +1,4 @@
 import React from "react";
-import project1 from "../img/1.png";
-import project2 from "../img/project2.png";
-import project3 from "../img/project3.png";
 
 function Textprojects() {
   return (

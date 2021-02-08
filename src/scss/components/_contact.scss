@@ -1,14 +1,20 @@
 .contener-contact {
   text-align: center;
-  #contact-form {
-    input {
-      min-width: 60px;
-    }
-    textarea {
-      max-height: 400px;
-      min-height: 180px;
-      max-width: 460px;
-      min-width: 177px;
-    }
+  margin: 20px 0;
+  padding: 0 37px;
+  margin-left: auto;
+  margin-right: auto;
+  // width: 10em;
+}
+
+@media all and (min-width: 200px) and (max-width: 300px) {
+  .contener-contact {
+    padding: 0 20px;
+  }
+}
+
+@media all and (min-width: 300px) and (max-width: 380px) {
+  .contener-contact {
+    padding: 0 47px;
   }
 }

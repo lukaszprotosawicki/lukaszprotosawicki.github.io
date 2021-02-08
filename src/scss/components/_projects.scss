@@ -1,3 +1,7 @@
+.contener-projects {
+  padding: 0 18px;
+}
+
 .contener-projects a {
   display: flex;
   color: rgb(172, 172, 172);
@@ -5,16 +9,28 @@
   margin-right: auto;
   width: 12em;
   font-size: 18px;
+  padding: 2px 4px;
+  // margin: 0 9px 0 14px;
 }
 @media all and (max-width: 480px) {
+  .contener-projects {
+    padding: 0 12px;
+  }
   .contener-projects a {
-    width: 12em;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media all and (max-width: 395px) {
+  .contener-projects {
+    padding: 0 12px;
+  }
   .contener-projects a {
-    width: 12em;
-    font-size: 14px;
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 285px) {
+  .contener-projects {
+    padding: 0 16px;
   }
 }
