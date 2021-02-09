@@ -75,7 +75,7 @@ const UL = styled.ul `
 const Rightnav = ({open}) => {
     return (
       <AuthProvider>
-      <HashRouter>
+      <HashRouter >
          <UL open={open} >
         <nav>
           <li><Link to={"/"}>About Me</Link></li>
@@ -94,7 +94,7 @@ const Rightnav = ({open}) => {
               <Route path="/login" component={Login}/>
               <Route path="/signup" component={SignUp}/>
         </Switch>
-      </HashRouter>
+      </HashRouter >
       </AuthProvider>
     )
 }
