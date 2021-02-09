@@ -18,11 +18,11 @@ const UL = styled.ul `
     }
     
     li {
-      padding: 10px 5px;
+      padding: 10px 1px;
       
-      font-size: 20px;
+      font-size: 19px;
       cursor: pointer;
-      margin: 0 28px;
+      margin: 0 2vw;
       text-align: center;
       a {
         color: rgb(138,136,136);
@@ -75,6 +75,9 @@ const Rightnav = ({open}) => {
           <li><Link to={"/"}>About Me</Link></li>
             <li><Link to={"/projects"} >Projects</Link></li>
             <li> <Link to={"/contact"} >Contact</Link></li>
+            <li> <Link to={"/contact"} >Login</Link></li>
+            <li> <Link to={"/contact"} >Sign Up</Link></li>
+            <li> <Link to={"/contact"} >Sign Out</Link></li>
             </nav>
             </UL>
             <br />
