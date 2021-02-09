@@ -5,9 +5,10 @@ import Contact from "../Contact";
 import Aboutme from "../Aboutme";
 import Login from "../server/Login";
 import SignUp from "../server/SignUp";
-import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {BrowserRouter as HashRouter, Switch, Route, Link } from "react-router-dom";
 import app from "../server/Firebase";
 import { AuthProvider } from "../server/Auth";
+
 
 const UL = styled.ul `
     list-style: none;
@@ -74,7 +75,7 @@ const UL = styled.ul `
 const Rightnav = ({open}) => {
     return (
       <AuthProvider>
-      <Router>
+      <HashRouter>
          <UL open={open} >
         <nav>
           <li><Link to={"/"}>About Me</Link></li>
@@ -93,7 +94,7 @@ const Rightnav = ({open}) => {
               <Route path="/login" component={Login}/>
               <Route path="/signup" component={SignUp}/>
         </Switch>
-      </Router>
+      </HashRouter>
       </AuthProvider>
     )
 }
