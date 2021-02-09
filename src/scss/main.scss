@@ -9,6 +9,18 @@ body {
   font-family: "Merriweather", serif;
 }
 
+.form {
+  margin: 0 auto;
+  text-align: center;
+  input {
+    margin-bottom: 2px;
+  }
+  .login-button {
+    margin-top: 10px;
+    width: 80px;
+  }
+}
+
 @import "./components/bar";
 @import "./components/content";
 @import "./components/profile";

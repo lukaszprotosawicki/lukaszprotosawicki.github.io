@@ -1,41 +1,35 @@
+import React, { useCallback } from "react";
+import { withRouter } from "react-router-dom";
 import styled from "styled-components";
 import Content from "../Content";
-import React, { useCallback, useContext } from "react";
-import { withRouter, Redirect } from "react-router";
 import app from "../server/Firebase";
-import { AuthContext } from "../server/Auth";
 
 const Nav = styled.nav`
   display: flex;
 `;
 
-const Login = ({ history }) => {
-  const handleLogin = useCallback(
+const SignUp = ({ history }) => {
+  const handleSignUp = useCallback(
     async (event) => {
       event.preventDefault();
       const { email, password } = event.target.elements;
       try {
         await app
           .auth()
-          .signInWithEmailAndPassword(email.value, password.value);
+          .createUserWithEmailAndPassword(email.value, password.value);
         history.push("/");
-        alert("Now you have logged in my website");
+        alert("You have registered correctly");
       } catch (error) {
         alert(error);
       }
     },
     [history]
   );
-  const { currentUser } = useContext(AuthContext);
-
-  if (currentUser) {
-    return <Redirect to="/" />;
-  }
   return (
     <Nav>
       <Content />
       <div className="readme">
-        <form onSubmit={handleLogin} className="form">
+        <form onSubmit={handleSignUp} className="form">
           <p>
             <label htmlFor="email"></label>
             <input
@@ -55,7 +49,7 @@ const Login = ({ history }) => {
             />
           </p>
           <button type="submit" className="login-button">
-            Login
+            Sign Up
           </button>
         </form>
       </div>
@@ -63,4 +57,4 @@ const Login = ({ history }) => {
   );
 };
 
-export default withRouter(Login);
+export default withRouter(SignUp);

@@ -3,7 +3,11 @@ import styled from 'styled-components';
 import Projects from "../Projects";
 import Contact from "../Contact";
 import Aboutme from "../Aboutme";
+import Login from "../server/Login";
+import SignUp from "../server/SignUp";
 import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import app from "../server/Firebase";
+import { AuthProvider } from "../server/Auth";
 
 const UL = styled.ul `
     list-style: none;
@@ -69,15 +73,16 @@ const UL = styled.ul `
 
 const Rightnav = ({open}) => {
     return (
+      <AuthProvider>
       <Router>
          <UL open={open} >
         <nav>
           <li><Link to={"/"}>About Me</Link></li>
             <li><Link to={"/projects"} >Projects</Link></li>
             <li> <Link to={"/contact"} >Contact</Link></li>
-            <li> <Link to={"/contact"} >Login</Link></li>
-            <li> <Link to={"/contact"} >Sign Up</Link></li>
-            <li> <Link to={"/contact"} >Sign Out</Link></li>
+            <li> <Link to={"/login"} >Login</Link></li>
+            <li className="button-register"> <Link to={"/signup"} >Sign Up</Link></li>
+            <li> <Link onClick={() => app.auth().signOut()}  to={"/"}  > Sign Out</Link></li>
             </nav>
             </UL>
             <br />
@@ -85,10 +90,11 @@ const Rightnav = ({open}) => {
               <Route exact path="/" component={Aboutme} />
               <Route path="/projects" component={Projects}/>
               <Route path="/contact" component={Contact}/>
+              <Route path="/login" component={Login}/>
+              <Route path="/signup" component={SignUp}/>
         </Switch>
-    
       </Router>
-
+      </AuthProvider>
     )
 }
 
