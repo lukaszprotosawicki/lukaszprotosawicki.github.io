@@ -5,6 +5,7 @@ import Contact from "../Contact";
 import Aboutme from "../Aboutme";
 import Login from "../server/Login";
 import SignUp from "../server/SignUp";
+import Weather from "../weather/Weather";
 import {BrowserRouter as HashRouter, Switch, Route, Link } from "react-router-dom";
 import app from "../server/Firebase";
 import { AuthProvider } from "../server/Auth";
@@ -27,7 +28,7 @@ const UL = styled.ul `
       
       font-size: 19px;
       cursor: pointer;
-      margin: 0 2vw;
+      margin: 0 1.5vw;
       text-align: center;
       a {
         color: rgb(138,136,136);
@@ -81,6 +82,7 @@ const Rightnav = ({open}) => {
           <li><Link to={"/"}>About Me</Link></li>
             <li><Link to={"/projects"} >Projects</Link></li>
             <li> <Link to={"/contact"} >Contact</Link></li>
+            <li> <Link to={"/weather"} >Weather</Link></li>
             <li> <Link to={"/login"} >Login</Link></li>
             <li className="button-register"> <Link to={"/signup"} >Sign Up</Link></li>
             <li> <Link onClick={() => app.auth().signOut()}  to={"/"}  > Sign Out</Link></li>
@@ -91,6 +93,7 @@ const Rightnav = ({open}) => {
               <Route exact path="/" component={Aboutme} />
               <Route path="/projects" component={Projects}/>
               <Route path="/contact" component={Contact}/>
+              <Route path="/weather" component={Weather}/>
               <Route path="/login" component={Login}/>
               <Route path="/signup" component={SignUp}/>
         </Switch>
