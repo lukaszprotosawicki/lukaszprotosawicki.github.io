@@ -23,6 +23,7 @@ const Login = ({ history }) => {
       } catch (error) {
         alert(error);
       }
+      event.preventDefault();
     },
     [history]
   );

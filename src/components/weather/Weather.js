@@ -10,6 +10,14 @@ const Nav = styled.nav`
 class Weather extends Component {
   state = {
     value: "",
+    date: "",
+    city: "",
+    sunrise: "",
+    sunset: "",
+    temp: "",
+    pressure: "",
+    wind: "",
+    err: "",
   };
 
   handleInputChange = (e) => {
@@ -18,13 +26,30 @@ class Weather extends Component {
     });
   };
 
+  handleCitySubmit = (e) => {
+    e.preventDefault();
+    console.log("pot");
+
+    const API = `api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid={d87bca49d8aa56fa19f37ba4eacc359a}`;
+
+    fetch(API)
+      .then((response) => console.log(response))
+      .catch((err) => console.log(err));
+  };
+
   render() {
     return (
       <Nav>
         <Content />
         <div className="readme">
-          <Form value={this.state.value} change={this.handleInputChange} />
-          <Result />
+          <div className="weather">
+            <Form
+              value={this.state.value}
+              change={this.handleInputChange}
+              submit={this.handleCitySubmit}
+            />
+            <Result />
+          </div>
         </div>
       </Nav>
     );

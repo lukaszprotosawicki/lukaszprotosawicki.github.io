@@ -21,6 +21,11 @@ body {
   }
 }
 
+.weather {
+  margin: 0 auto;
+  text-align: center;
+}
+
 @import "./components/bar";
 @import "./components/content";
 @import "./components/profile";
