@@ -28,12 +28,18 @@ class Weather extends Component {
 
   handleCitySubmit = (e) => {
     e.preventDefault();
-    console.log("pot");
 
-    const API = `api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid={d87bca49d8aa56fa19f37ba4eacc359a}`;
+    const API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid=d87bca49d8aa56fa19f37ba4eacc359a`;
 
     fetch(API)
-      .then((response) => console.log(response))
+      .then((response) => {
+        if (response.ok) {
+          return response;
+        }
+        throw Error("Incorrect name");
+      })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
       .catch((err) => console.log(err));
   };
 
