@@ -18,7 +18,7 @@ const Result = (props) => {
     const sunsetTime = new Date(sunset * 1000).toLocaleTimeString();
     const temperature = (temp - 271).toFixed(1);
     content = (
-      <div>
+      <div className="content-weather">
         <br />
         <h3>
           {" "}

@@ -26,6 +26,22 @@ body {
   text-align: center;
 }
 
+.content-weather {
+  h3 {
+    em {
+      font-weight: bold;
+      font-size: 24px;
+      color: white;
+    }
+  }
+}
+
+.content-weather h3,
+h4 {
+  margin: 0 19%;
+  text-align: initial;
+}
+
 @import "./components/bar";
 @import "./components/content";
 @import "./components/profile";
