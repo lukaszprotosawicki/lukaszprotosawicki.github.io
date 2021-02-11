@@ -17,7 +17,7 @@ class Weather extends Component {
     temp: "",
     pressure: "",
     wind: "",
-    err: "",
+    err: false,
   };
 
   handleInputChange = (e) => {
@@ -39,8 +39,25 @@ class Weather extends Component {
         throw Error("Incorrect name");
       })
       .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((err) => console.log(err));
+      .then((data) => {
+        const time = new Date().toLocaleString();
+        this.setState({
+          err: false,
+          date: time,
+          city: "",
+          sunrise: "",
+          sunset: "",
+          temp: "",
+          pressure: "",
+          wind: "",
+        });
+      })
+      .catch((err) => {
+        this.setState({
+          err: true,
+        });
+        console.log(err);
+      });
   };
 
   render() {
@@ -54,7 +71,7 @@ class Weather extends Component {
               change={this.handleInputChange}
               submit={this.handleCitySubmit}
             />
-            <Result />
+            <Result error={this.state.err} />
           </div>
         </div>
       </Nav>
