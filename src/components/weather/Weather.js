@@ -53,11 +53,10 @@ class Weather extends Component {
         }));
       })
       .catch((err) => {
-        this.setState((state) => ({
+        this.setState((prevState) => ({
           err: true,
-          city: state.value,
+          city: prevState.value,
         }));
-        console.log(err);
       });
   };
 
