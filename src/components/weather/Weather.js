@@ -41,21 +41,22 @@ class Weather extends Component {
       .then((response) => response.json())
       .then((data) => {
         const time = new Date().toLocaleString();
-        this.setState({
+        this.setState((state) => ({
           err: false,
           date: time,
-          city: "",
-          sunrise: "",
-          sunset: "",
-          temp: "",
-          pressure: "",
-          wind: "",
-        });
+          city: state.value,
+          sunrise: data.sys.sunrise,
+          sunset: data.sys.sunset,
+          temp: data.main.temp,
+          pressure: data.main.pressure,
+          wind: data.wind.speed,
+        }));
       })
       .catch((err) => {
-        this.setState({
+        this.setState((state) => ({
           err: true,
-        });
+          city: state.value,
+        }));
         console.log(err);
       });
   };
@@ -71,7 +72,7 @@ class Weather extends Component {
               change={this.handleInputChange}
               submit={this.handleCitySubmit}
             />
-            <Result error={this.state.err} />
+            <Result weather={this.state} />
           </div>
         </div>
       </Nav>
