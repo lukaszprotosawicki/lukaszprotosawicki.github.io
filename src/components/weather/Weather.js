@@ -29,7 +29,7 @@ class Weather extends Component {
   handleCitySubmit = (e) => {
     e.preventDefault();
 
-    const API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid=d87bca49d8aa56fa19f37ba4eacc359a`;
+    const API = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid=d87bca49d8aa56fa19f37ba4eacc359a`;
 
     fetch(API)
       .then((response) => {
