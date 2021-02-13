@@ -1,18 +1,22 @@
-import React, { useEffect, useState } from "react";
-import app from "../server/Firebase";
+import { useContext } from "react";
+import { AuthProvider } from "../server/AuthProvider";
+import styled from "styled-components";
 
-export const AuthContext = React.createContext();
+const Nav = styled.nav`
+  display: flex;
+  h1 {
+    text-align: center;
+  }
+`;
 
-export const AuthProvider = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState(null);
-
-  useEffect(() => {
-    app.auth().onAuthStateChanged(setCurrentUser);
-  }, []);
-
-  return (
-    <AuthContext.Provider value={{ currentUser }}>
-      {children}
-    </AuthContext.Provider>
+export const Auth = (props) => {
+  const user = useContext(AuthProvider);
+  return user ? (
+    props.children
+  ) : (
+    <Nav>
+      <h1>Please log in!!!</h1>
+    </Nav>
   );
 };
+export default Auth;

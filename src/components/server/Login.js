@@ -2,8 +2,8 @@ import styled from "styled-components";
 import Content from "../Content";
 import React, { useCallback, useContext } from "react";
 import { withRouter, Redirect } from "react-router";
-import app from "../server/Firebase";
-import { AuthContext } from "../server/Auth";
+import firebase from "../server/Firebase";
+import { AuthProvider } from "./AuthProvider";
 
 const Nav = styled.nav`
   display: flex;
@@ -15,21 +15,19 @@ const Login = ({ history }) => {
       event.preventDefault();
       const { email, password } = event.target.elements;
       try {
-        await app
+        await firebase
           .auth()
           .signInWithEmailAndPassword(email.value, password.value);
         history.push("/");
-        alert("Now you have logged in my website");
       } catch (error) {
         alert(error);
       }
-      event.preventDefault();
     },
     [history]
   );
-  const { currentUser } = useContext(AuthContext);
+  const { user } = useContext(AuthProvider);
 
-  if (currentUser) {
+  if (user) {
     return <Redirect to="/" />;
   }
   return (
