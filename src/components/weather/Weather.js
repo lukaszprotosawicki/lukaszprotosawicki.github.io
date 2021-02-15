@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Content from "../../components/Content";
 import Form from "./Form";
 import Result from "./Result";
-import Auth from "../server/Auth";
 
 const Nav = styled.nav`
   display: flex;
@@ -66,16 +65,14 @@ class Weather extends Component {
       <Nav>
         <Content />
         <div className="readme">
-          <Auth>
-            <div className="weather">
-              <Form
-                value={this.state.value}
-                change={this.handleInputChange}
-                submit={this.handleCitySubmit}
-              />
-              <Result weather={this.state} />
-            </div>
-          </Auth>
+          <div className="weather">
+            <Form
+              value={this.state.value}
+              change={this.handleInputChange}
+              submit={this.handleCitySubmit}
+            />
+            <Result weather={this.state} />
+          </div>
         </div>
       </Nav>
     );

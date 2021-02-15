@@ -42,6 +42,10 @@ h4 {
   text-align: initial;
 }
 
+.active-link {
+  text-decoration: underline !important;
+}
+
 @import "./components/bar";
 @import "./components/content";
 @import "./components/profile";

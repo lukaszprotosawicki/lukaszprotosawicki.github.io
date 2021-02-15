@@ -10,6 +10,7 @@ function Projects() {
   return (
     <Nav>
       <Content />
+
       <Textprojects />
     </Nav>
   );

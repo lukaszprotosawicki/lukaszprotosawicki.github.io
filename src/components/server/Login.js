@@ -3,7 +3,7 @@ import Content from "../Content";
 import React, { useCallback, useContext } from "react";
 import { withRouter, Redirect } from "react-router";
 import firebase from "../server/Firebase";
-import { AuthContext } from "./AuthProvider";
+import { AuthContext } from "./Auth";
 
 const Nav = styled.nav`
   display: flex;
@@ -25,9 +25,10 @@ const Login = ({ history }) => {
     },
     [history]
   );
-  const { user } = useContext(AuthContext);
 
-  if (user) {
+  const { currentUser } = useContext(AuthContext);
+
+  if (currentUser) {
     return <Redirect to="/" />;
   }
   return (

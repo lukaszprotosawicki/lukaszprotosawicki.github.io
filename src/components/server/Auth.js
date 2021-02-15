@@ -1,22 +1,20 @@
-import { useContext } from "react";
-import { AuthProvider } from "../server/AuthProvider";
-import styled from "styled-components";
+import { createContext, useEffect, useState } from "react";
+import firebase from "./Firebase";
 
-const Nav = styled.nav`
-  display: flex;
-  h1 {
-    text-align: center;
-  }
-`;
+export const AuthContext = createContext(null);
 
-export const Auth = (props) => {
-  const user = useContext(AuthProvider);
-  return user ? (
-    props.children
-  ) : (
-    <Nav>
-      <h1>Please log in!!!</h1>
-    </Nav>
+export const AuthProvider = ({ children }) => {
+  const [currentUser, setCurrentUser] = useState(null);
+
+  useEffect(() => {
+    firebase
+      .auth()
+      .onAuthStateChanged((currentUser) => setCurrentUser(currentUser));
+  }, []);
+
+  return (
+    <AuthContext.Provider value={{ currentUser }}>
+      {children}
+    </AuthContext.Provider>
   );
 };
-export default Auth;
