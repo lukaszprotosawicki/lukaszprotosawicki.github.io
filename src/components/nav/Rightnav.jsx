@@ -9,7 +9,7 @@ import SignUp from "../server/SignUp";
 import Weather from "../weather/Weather";
 import {BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 import firebase from "../server/Firebase";
-import  {AuthProvider}   from "../server/Auth";
+import  {AuthContext}   from "../server/Auth";
 import  PrivateRoute   from "../server/PrivateRoute";
 
 
@@ -21,7 +21,7 @@ const UL = styled.ul `
     padding-left: 140px;
     z-index: 1;
     
-    nav {
+    div {
       display: flex;
     }
     
@@ -63,7 +63,7 @@ const UL = styled.ul `
       z-index: 1;
       padding-top: 3.5rem;
       transition: transform 0.6s ease-in-out;
-      nav {
+      div {
         display: block;
         margin: 5px 0 10px 50px;
       }
@@ -74,23 +74,24 @@ const UL = styled.ul `
 `;
 
 const Rightnav = ({open}) => {
-  const currentUser = useContext(AuthProvider );
+  const currentUser = useContext(AuthContext);
+  
   const handleOnSignOutClick = () => {
     firebase.auth().signOut();
   };
     return (
-      <AuthProvider>
+      
         <Router >
          <UL open={open} >
-            <nav>
+            <div>
               <li><NavLink  to={"/"}>About Me</NavLink></li>
               <li><NavLink activeClassName="active-link" to={"/projects"} >Projects</NavLink></li>
               <li> <NavLink activeClassName="active-link" to={"/contact"} >Contact</NavLink></li>
               <li> <NavLink activeClassName="active-link" to={"/weather"} >Weather</NavLink></li>
-              <li> {!currentUser && ( <NavLink activeClassName="active-link" to={"/login"} >Login</NavLink>)}</li>
-              <li className="button-register">{!currentUser && ( <NavLink activeClassName="active-link" to={"/signup"} >Sign Up</NavLink>)}</li>
-              <li> {!currentUser && (<NavLink onClick={handleOnSignOutClick}  to={"/"}  > Sign Out</NavLink>)}</li>
-            </nav>
+               {!currentUser && ( <li><NavLink activeClassName="active-link" to={"/login"} >Login</NavLink></li>)}
+             {!currentUser && (  <li className="button-register"><NavLink activeClassName="active-link" to={"/signup"} >Sign Up</NavLink></li>)}
+             {currentUser && ( <li> <NavLink onClick={handleOnSignOutClick}  to={"/"}  > Sign Out</NavLink></li>)}
+            </div>
           </UL>
           <br />
           <Switch>
@@ -102,7 +103,7 @@ const Rightnav = ({open}) => {
               <Route path="/signup" component={SignUp}/>
           </Switch>
         </Router >
-      </AuthProvider>
+      
     )
 
 }

@@ -1,11 +1,14 @@
 import Bar from "./components/Bar";
 import Navbar from "./components/nav/Navbar";
+import { AuthProvider } from "./components/server/Auth";
 
 function App() {
   return (
     <>
-      <Bar />
-      <Navbar />
+      <AuthProvider>
+        <Bar />
+        <Navbar />
+      </AuthProvider>
     </>
   );
 }
