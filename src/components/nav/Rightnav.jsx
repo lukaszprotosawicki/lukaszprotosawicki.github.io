@@ -84,7 +84,7 @@ const Rightnav = ({open}) => {
         <Router >
          <UL open={open} >
             <div>
-              <li><NavLink  to={"/aboutme"}>About Me</NavLink></li>
+              <li><NavLink  to={"/"}>About Me</NavLink></li>
               <li><NavLink activeClassName="active-link" to={"/projects"} >Projects</NavLink></li>
               <li> <NavLink activeClassName="active-link" to={"/contact"} >Contact</NavLink></li>
               <li> <NavLink activeClassName="active-link" to={"/weather"} >Weather</NavLink></li>
@@ -95,7 +95,7 @@ const Rightnav = ({open}) => {
           </UL>
           <br />
           <Switch>
-              <Route exact path="/aboutme" component={Aboutme} />
+              <Route exact path="/" component={Aboutme} />
               <PrivateRoute path="/projects" component={Projects}/>
               <Route path="/contact" component={Contact}/>
               <PrivateRoute path="/weather" component={Weather}/>
