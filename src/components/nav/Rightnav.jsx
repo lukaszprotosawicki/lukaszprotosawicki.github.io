@@ -13,14 +13,18 @@ import  {AuthContext}   from "../server/Auth";
 import  PrivateRoute   from "../server/PrivateRoute";
 
 
+
+
 const UL = styled.ul `
+
     list-style: none;
     display: flex;
     height: 40px;
     flex-flow: row nowrap;
     padding-left: 140px;
     z-index: 1;
-    
+    }
+
     div {
       display: flex;
     }
@@ -42,7 +46,6 @@ const UL = styled.ul `
     }
       @media all and (min-width: 700px)  {
         a{
-
           li {
             width: 100%;
            }
@@ -50,42 +53,41 @@ const UL = styled.ul `
       }
 
     @media (max-width: 700px) {
-      padding-left: 0px;
-      flex-flow: column nowrap;
-      background-color: rgb(5 9 14);
-      position: fixed;
-      transform: ${({open}) => open ? 'translateX(0)' : 'translateX(-100%)'};
-      top: 0;
-      height: min-content;
-      border-radius: 0 56px 46px;
-      left: 0;
-      width: 180px;
-      z-index: 1;
-      padding-top: 3.5rem;
-      transition: transform 0.6s ease-in-out;
-      div {
-        display: block;
-        margin: 5px 0 10px 50px;
-      }
-      li {
-        margin-left: -10px;
-      }
+        padding-left: 0px;
+        flex-flow: column nowrap;
+        background-color: rgb(5 9 14);
+        position: fixed;
+        transform: ${({open}) => open ? 'translateX(0)' : 'translateX(-100%)'};
+        top: 0;
+        height: min-content;
+        border-radius: 0 56px 46px;
+        left: 0;
+        width: 180px;
+        z-index: 1;
+        padding-top: 3.5rem;
+        transition: transform 0.6s ease-in-out;
+        div {
+          display: block;
+          margin: 5px 0 10px 50px;
+        }
+        li {
+          margin-left: -10px;
+        }
     }
 `;
 
-const Rightnav = ({open}) => {
+const Rightnav = ({open, closeNavigation}) => {
   const currentUser = useContext(AuthContext);
   
   const handleOnSignOutClick = () => {
     firebase.auth().signOut();
   };
     return (
-      
         <Router >
-         <UL open={open} >
-            <div>
-              <li><NavLink  to={"/"}>About Me</NavLink></li>
-              <li><NavLink activeClassName="active-link" to={"/projects"} >Projects</NavLink></li>
+         <UL id="ocultars" open={open} >
+            <div onClick={closeNavigation}>
+              <li  ><NavLink   to={"/" }> About Me</NavLink ></li>
+              <li ><NavLink activeClassName="active-link" to={"/projects"} >Projects</NavLink></li>
               <li> <NavLink activeClassName="active-link" to={"/contact"} >Contact</NavLink></li>
               <li> <NavLink activeClassName="active-link" to={"/weather"} >Weather</NavLink></li>
                {!currentUser && ( <li><NavLink activeClassName="active-link" to={"/login"} >Login</NavLink></li>)}
@@ -95,7 +97,7 @@ const Rightnav = ({open}) => {
           </UL>
           <br />
           <Switch>
-              <Route exact path="/" component={Aboutme} />
+              <Route  exact path="/" component={Aboutme} />
               <PrivateRoute path="/projects" component={Projects}/>
               <Route path="/contact" component={Contact}/>
               <PrivateRoute path="/weather" component={Weather}/>
@@ -103,9 +105,7 @@ const Rightnav = ({open}) => {
               <Route path="/signup" component={SignUp}/>
           </Switch>
         </Router >
-      
     )
-
 }
 
 export default Rightnav

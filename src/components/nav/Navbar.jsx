@@ -18,6 +18,7 @@ const Nav = styled.nav`
     @media (max-width: 700px) {
         height: 0;
       }
+
 `
 const Navbar = () => {
     return (
